@@ -1,5 +1,10 @@
 <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
+		<symbol id="burger" viewBox="0 0 24 24">
+			<path d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z"/>
+			<path d="M24,11c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V11z"/>
+			<path d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z"/>
+		</symbol>
 		<symbol id="check" viewBox="0 0 16 12">
 			<image width="16" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAMAAABcOc2zAAAAAXNSR0IB2cksfwAAAGxQTFRFAAAAgICAs7Ozs7Ozs7Ozqqqqs7Ozs7Ozs7Ozs7Ozs7OztLS0tLS0////qqqqs7OztLS0s7OzsrKys7Ozv7+/tLS0s7OzsrKysrKys7Ozs7Ozs7OztLS0qqqqsrKys7Ozv7+/tLS0srKys7Oz82PVHAAAACR0Uk5TAAKhvQoDpP+7pZumnAEJrI6nwY0EqZqZiKqQrpgGt5cIupaUlkKnvQAAAGdJREFUeJxNzdsOgkAMBNBZEEaUgsoKchX0//+RbgjQeWh60mQKmLgovlgnKXm1zkjejO/qXFCUj83PcBfgRVZq/1bXajS6fODb3XBaza7X0chW5gM0g+z14xT8lfPhvJA/Y6CY/odXg7gErBsoe9UAAAAASUVORK5CYII="></image>
 		</symbol>
