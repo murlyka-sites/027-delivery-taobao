@@ -1,0 +1,41 @@
+.header-sticky
+	header.section-header: .container: .row: .col-xs-12
+		.section-header__container
+			.section-header__column.section-header__column_header
+				.section-header__logo.img-responsive(style="height: 45px; background: rebeccapurple;")
+			.section-header__column.section-header__column_course
+				.course-for-today
+					.course-for-today__label Курс на сегодня:
+					.course-for-today__value 1 ¥ = 
+						span 9.5 
+							span.rubl
+			.section-header__column.section-header__column_nav.hidden-xs.hidden-sm
+				.section-header__nav: nav.nav-top
+					ul.nav-top__list
+						li.nav-top__item: a.nav-top__link(href="#") О нас
+						li.nav-top__item: a.nav-top__link(href="#") Чат
+						li.nav-top__item: a.nav-top__link(href="#") Форум
+						li.nav-top__item: a.nav-top__link(href="#") Условия
+						li.nav-top__item: a.nav-top__link(href="#") Отзывы
+						li.nav-top__item: a.nav-top__link(href="#") Товары
+						li.nav-top__item.nav-top__item_auth: nav.nav-top-auth: ul.nav-top-auth__list
+							li.nav-top-auth__item: a.nav-top-auth__link(href="#") Вход
+							li.nav-top-auth__item: a.nav-top-auth__link(href="#") Регистрация
+			.section-header__column.section-header__column_burger
+				a.inert(href="#top-nav" data-fancybox): svg.svg(width="24" height="24"): use(xlink:href="images/sprite.svg#burger")
+	.hidden
+		.popup-top-nav#top-nav
+			//- img.popup-top-nav__logo(src="images/logo.png" width="277" height="44" alt="Лого")
+			.popup-top-nav__nav.nav-popup
+				ul.nav-popup__list
+					li.nav-popup__item: a.nav-popup__link(href="#") О нас
+					li.nav-popup__item: a.nav-popup__link(href="#") Чат
+					li.nav-popup__item: a.nav-popup__link(href="#") Форум
+					li.nav-popup__item: a.nav-popup__link(href="#") Условия
+					li.nav-popup__item: a.nav-popup__link(href="#") Отзывы
+					li.nav-popup__item: a.nav-popup__link(href="#") Товары
+			.popup-top-nav__auth-and-registration.auth-and-registration
+				nav.nav-top-auth
+					ul.nav-top-auth__list.nav-top-auth__list_slash
+						li.nav-top-auth__item: a.nav-top-auth__link(href="#") Вход
+						li.nav-top-auth__item: a.nav-top-auth__link(href="#") Регистрация			

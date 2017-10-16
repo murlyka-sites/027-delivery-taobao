@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta content="telephone=no" name="format-detection">
+    <title>delivery taobao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css"><!--[if lte IE 8]>
+<![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css?ts=1507817131752">
+    <link rel="stylesheet" href="css/style.css?ts=1507817131752">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css"><!--[if lte IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <style>
+      .panel-orders__select-wrap::before {
+      	z-index: 2;
+      	display: none;
+      }
+    </style><![endif]-->
+  </head>
+  <body class="page">
+    <div class="header-sticky">
+      <header class="section-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="section-header__container">
+                <div class="section-header__column section-header__column_header">
+                  <div class="section-header__logo img-responsive" style="height: 45px; background: rebeccapurple;"></div>
+                </div>
+                <div class="section-header__column section-header__column_course">
+                  <div class="course-for-today">
+                    <div class="course-for-today__label">Курс на сегодня:</div>
+                    <div class="course-for-today__value">1 ¥ = <span>9.5 <span class="rubl"></span></span></div>
+                  </div>
+                </div>
+                <div class="section-header__column section-header__column_nav hidden-xs hidden-sm">
+                  <div class="section-header__nav">
+                    <nav class="nav-top">
+                      <ul class="nav-top__list">
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">О нас</a></li>
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">Чат</a></li>
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">Форум</a></li>
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">Условия</a></li>
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">Отзывы</a></li>
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">Товары</a></li>
+                        <li class="nav-top__item nav-top__item_auth">
+                          <nav class="nav-top-auth">
+                            <ul class="nav-top-auth__list">
+                              <li class="nav-top-auth__item"><a class="nav-top-auth__link" href="#">Вход</a></li>
+                              <li class="nav-top-auth__item"><a class="nav-top-auth__link" href="#">Регистрация</a></li>
+                            </ul>
+                          </nav>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="section-header__column section-header__column_burger"><a class="inert" href="#top-nav" data-fancybox>
+                    <svg class="svg" width="24" height="24">
+                      <use xlink:href="images/sprite.svg#burger"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="hidden">
+        <div class="popup-top-nav" id="top-nav">
+          <div class="popup-top-nav__nav nav-popup">
+            <ul class="nav-popup__list">
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">О нас</a></li>
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">Чат</a></li>
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">Форум</a></li>
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">Условия</a></li>
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">Отзывы</a></li>
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">Товары</a></li>
+            </ul>
+          </div>
+          <div class="popup-top-nav__auth-and-registration auth-and-registration">
+            <nav class="nav-top-auth">
+              <ul class="nav-top-auth__list nav-top-auth__list_slash">
+                <li class="nav-top-auth__item"><a class="nav-top-auth__link" href="#">Вход</a></li>
+                <li class="nav-top-auth__item"><a class="nav-top-auth__link" href="#">Регистрация			</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-orders">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-orders__sides sides">
+              <div class="sides__column">
+                <h2 class="h2 section-orders__title">Ваши заказы</h2>
+              </div>
+              <div class="sides__column">
+                <div class="section-orders__panel panel-orders">
+                  <div class="panel-orders__column panel-orders__column_select">
+                    <label class="panel-orders__select-wrap">
+                      <select class="select panel-orders__select">
+                        <option>Показать все</option>
+                        <option>Показать все</option>
+                        <option>Показать все</option>
+                        <option>Показать все</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="panel-orders__column panel-orders__column_select">
+                    <label class="panel-orders__select-wrap">
+                      <select class="select panel-orders__select">
+                        <option>Одежда для сына</option>
+                        <option>Одежда для сына</option>
+                        <option>Одежда для сына</option>
+                        <option>Одежда для сына</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="panel-orders__column">
+                    <button class="panel-orders__button">
+                      <svg class="svg" width="18" height="19">
+                        <use xlink:href="images/sprite.svg#rename"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="panel-orders__column">
+                    <button class="panel-orders__button">
+                      <svg class="svg" width="23" height="20">
+                        <use xlink:href="images/sprite.svg#create-folder"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-orders__cards">
+              <div class="section-orders__card">
+                <div class="card-orders">
+                  <div class="card-orders__column card-orders__column_pr">
+                    <div class="card-orders__prs"><img class="card-orders__pr" src="images/orders/1.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/2.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/3.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/4.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/5.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/6.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/7.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/8.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/9.jpg" width="63" height="63">
+                    </div>
+                    <div class="card-orders__count"> <b>69</b> товаров в <b>4</b> позициях</div>
+                    <div class="card-orders__dir">
+                      <div class="card-orders__dir-icon">
+                        <svg class="svg" width="22" height="20">
+                          <use xlink:href="images/sprite.svg#folder"></use>
+                        </svg>
+                      </div>
+                      <div class="card-orders__dir-title"><a class="link" href="#">Одежда для сына</a></div>
+                    </div>
+                  </div>
+                  <div class="card-orders__column card-orders__column_desc">
+                    <table class="sub-card-orders-table card-orders__sub-table">
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__code"><a class="link" href="#">#345356</a></div>
+                          <time class="card-orders__date">15.06.2017, 10:56</time>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__control cp-order">
+                            <div class="cp-order__container">
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="13" height="13">
+                                    <use xlink:href="images/sprite.svg#remove"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="12">
+                                    <use xlink:href="images/sprite.svg#check"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="16">
+                                    <use xlink:href="images/sprite.svg#edit"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__status"><span class="text_color_gray">Статус: </span><span class="text_color_green">Выкуплен</span><br>Оплачено 5680 ₽ </div>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__price">
+                            <div class="card-orders__yen"><b>¥ 804,4</b></div>
+                            <div class="card-orders__rubl"><b>₽</b> 7463,43</div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="card-orders__note"> <b>Примечание:</b> соображения высшего порядка, а также начало повседневной</div>
+                    <div class="card-orders__messages message-with-card-orders">
+                      <div class="message-with-card-orders__count"><a class="link" href="#">24 сообщения</a></div>
+                      <div class="message-with-card-orders__container">
+                        <div class="message-with-card-orders__column message-with-card-orders__column_pr"><img class="message-with-card-orders__pr" src="images/chat.jpg" width="44" height="44"></div>
+                        <div class="message-with-card-orders__column message-with-card-orders__column_text">
+                          <div class="message-with-card-orders__text">Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-orders__card">
+                <div class="card-orders">
+                  <div class="card-orders__column card-orders__column_pr">
+                    <div class="card-orders__prs"><img class="card-orders__pr" src="images/orders/1.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/2.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/3.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/4.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/5.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/6.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/7.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/8.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/9.jpg" width="63" height="63">
+                    </div>
+                    <div class="card-orders__count"> <b>69</b> товаров в <b>4</b> позициях</div>
+                    <div class="card-orders__dir">
+                      <div class="card-orders__dir-icon">
+                        <svg class="svg" width="22" height="20">
+                          <use xlink:href="images/sprite.svg#folder"></use>
+                        </svg>
+                      </div>
+                      <div class="card-orders__dir-title"><a class="link" href="#">Одежда для сына</a></div>
+                    </div>
+                  </div>
+                  <div class="card-orders__column card-orders__column_desc">
+                    <table class="sub-card-orders-table card-orders__sub-table">
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__code"><a class="link" href="#">#345356</a></div>
+                          <time class="card-orders__date">15.06.2017, 10:56</time>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__control cp-order">
+                            <div class="cp-order__container">
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="13" height="13">
+                                    <use xlink:href="images/sprite.svg#remove"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="12">
+                                    <use xlink:href="images/sprite.svg#check"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="16">
+                                    <use xlink:href="images/sprite.svg#edit"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__status"><span class="text_color_gray">Статус: </span><span class="text_color_green">Выкуплен</span><br>Оплачено 5680 ₽ </div>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__price">
+                            <div class="card-orders__yen"><b>¥ 804,4</b></div>
+                            <div class="card-orders__rubl"><b>₽</b> 7463,43</div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="card-orders__note"> <b>Примечание:</b> соображения высшего порядка, а также начало повседневной</div>
+                    <div class="card-orders__messages message-with-card-orders">
+                      <div class="message-with-card-orders__count"><a class="link" href="#">24 сообщения</a></div>
+                      <div class="message-with-card-orders__container">
+                        <div class="message-with-card-orders__column message-with-card-orders__column_pr"><img class="message-with-card-orders__pr" src="images/chat.jpg" width="44" height="44"></div>
+                        <div class="message-with-card-orders__column message-with-card-orders__column_text">
+                          <div class="message-with-card-orders__text">Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-orders__card">
+                <div class="card-orders">
+                  <div class="card-orders__column card-orders__column_pr">
+                    <div class="card-orders__prs"><img class="card-orders__pr" src="images/orders/1.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/2.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/3.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/4.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/5.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/6.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/7.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/8.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/9.jpg" width="63" height="63">
+                    </div>
+                    <div class="card-orders__count"> <b>69</b> товаров в <b>4</b> позициях</div>
+                    <div class="card-orders__dir">
+                      <div class="card-orders__dir-icon">
+                        <svg class="svg" width="22" height="20">
+                          <use xlink:href="images/sprite.svg#folder"></use>
+                        </svg>
+                      </div>
+                      <div class="card-orders__dir-title"><a class="link" href="#">Одежда для сына</a></div>
+                    </div>
+                  </div>
+                  <div class="card-orders__column card-orders__column_desc">
+                    <table class="sub-card-orders-table card-orders__sub-table">
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__code"><a class="link" href="#">#345356</a></div>
+                          <time class="card-orders__date">15.06.2017, 10:56</time>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__control cp-order">
+                            <div class="cp-order__container">
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="13" height="13">
+                                    <use xlink:href="images/sprite.svg#remove"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="12">
+                                    <use xlink:href="images/sprite.svg#check"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="16">
+                                    <use xlink:href="images/sprite.svg#edit"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__status"><span class="text_color_gray">Статус: </span><span class="text_color_green">Выкуплен</span><br>Оплачено 5680 ₽ </div>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__price">
+                            <div class="card-orders__yen"><b>¥ 804,4</b></div>
+                            <div class="card-orders__rubl"><b>₽</b> 7463,43</div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="card-orders__note"> <b>Примечание:</b> соображения высшего порядка, а также начало повседневной</div>
+                    <div class="card-orders__messages message-with-card-orders">
+                      <div class="message-with-card-orders__count"><a class="link" href="#">24 сообщения</a></div>
+                      <div class="message-with-card-orders__container">
+                        <div class="message-with-card-orders__column message-with-card-orders__column_pr"><img class="message-with-card-orders__pr" src="images/chat.jpg" width="44" height="44"></div>
+                        <div class="message-with-card-orders__column message-with-card-orders__column_text">
+                          <div class="message-with-card-orders__text">Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-orders__card">
+                <div class="card-orders">
+                  <div class="card-orders__column card-orders__column_pr">
+                    <div class="card-orders__prs"><img class="card-orders__pr" src="images/orders/1.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/2.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/3.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/4.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/5.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/6.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/7.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/8.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/9.jpg" width="63" height="63">
+                    </div>
+                    <div class="card-orders__count"> <b>69</b> товаров в <b>4</b> позициях</div>
+                    <div class="card-orders__dir">
+                      <div class="card-orders__dir-icon">
+                        <svg class="svg" width="22" height="20">
+                          <use xlink:href="images/sprite.svg#folder"></use>
+                        </svg>
+                      </div>
+                      <div class="card-orders__dir-title"><a class="link" href="#">Одежда для сына</a></div>
+                    </div>
+                  </div>
+                  <div class="card-orders__column card-orders__column_desc">
+                    <table class="sub-card-orders-table card-orders__sub-table">
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__code"><a class="link" href="#">#345356</a></div>
+                          <time class="card-orders__date">15.06.2017, 10:56</time>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__control cp-order">
+                            <div class="cp-order__container">
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="13" height="13">
+                                    <use xlink:href="images/sprite.svg#remove"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="12">
+                                    <use xlink:href="images/sprite.svg#check"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="16">
+                                    <use xlink:href="images/sprite.svg#edit"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__status"><span class="text_color_gray">Статус: </span><span class="text_color_green">Выкуплен</span><br>Оплачено 5680 ₽ </div>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__price">
+                            <div class="card-orders__yen"><b>¥ 804,4</b></div>
+                            <div class="card-orders__rubl"><b>₽</b> 7463,43</div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="card-orders__note"> <b>Примечание:</b> соображения высшего порядка, а также начало повседневной</div>
+                    <div class="card-orders__messages message-with-card-orders">
+                      <div class="message-with-card-orders__count"><a class="link" href="#">24 сообщения</a></div>
+                      <div class="message-with-card-orders__container">
+                        <div class="message-with-card-orders__column message-with-card-orders__column_pr"><img class="message-with-card-orders__pr" src="images/chat.jpg" width="44" height="44"></div>
+                        <div class="message-with-card-orders__column message-with-card-orders__column_text">
+                          <div class="message-with-card-orders__text">Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-orders__card">
+                <div class="card-orders">
+                  <div class="card-orders__column card-orders__column_pr">
+                    <div class="card-orders__prs"><img class="card-orders__pr" src="images/orders/1.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/2.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/3.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/4.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/5.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/6.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/7.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/8.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/9.jpg" width="63" height="63">
+                    </div>
+                    <div class="card-orders__count"> <b>69</b> товаров в <b>4</b> позициях</div>
+                    <div class="card-orders__dir">
+                      <div class="card-orders__dir-icon">
+                        <svg class="svg" width="22" height="20">
+                          <use xlink:href="images/sprite.svg#folder"></use>
+                        </svg>
+                      </div>
+                      <div class="card-orders__dir-title"><a class="link" href="#">Одежда для сына</a></div>
+                    </div>
+                  </div>
+                  <div class="card-orders__column card-orders__column_desc">
+                    <table class="sub-card-orders-table card-orders__sub-table">
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__code"><a class="link" href="#">#345356</a></div>
+                          <time class="card-orders__date">15.06.2017, 10:56</time>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__control cp-order">
+                            <div class="cp-order__container">
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="13" height="13">
+                                    <use xlink:href="images/sprite.svg#remove"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="12">
+                                    <use xlink:href="images/sprite.svg#check"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="16">
+                                    <use xlink:href="images/sprite.svg#edit"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__status"><span class="text_color_gray">Статус: </span><span class="text_color_green">Выкуплен</span><br>Оплачено 5680 ₽ </div>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__price">
+                            <div class="card-orders__yen"><b>¥ 804,4</b></div>
+                            <div class="card-orders__rubl"><b>₽</b> 7463,43</div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="card-orders__note"> <b>Примечание:</b> соображения высшего порядка, а также начало повседневной</div>
+                    <div class="card-orders__messages message-with-card-orders">
+                      <div class="message-with-card-orders__count"><a class="link" href="#">24 сообщения</a></div>
+                      <div class="message-with-card-orders__container">
+                        <div class="message-with-card-orders__column message-with-card-orders__column_pr"><img class="message-with-card-orders__pr" src="images/chat.jpg" width="44" height="44"></div>
+                        <div class="message-with-card-orders__column message-with-card-orders__column_text">
+                          <div class="message-with-card-orders__text">Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-orders__card">
+                <div class="card-orders">
+                  <div class="card-orders__column card-orders__column_pr">
+                    <div class="card-orders__prs"><img class="card-orders__pr" src="images/orders/1.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/2.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/3.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/4.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/5.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/6.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/7.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/8.jpg" width="63" height="63"><img class="card-orders__pr" src="images/orders/9.jpg" width="63" height="63">
+                    </div>
+                    <div class="card-orders__count"> <b>69</b> товаров в <b>4</b> позициях</div>
+                    <div class="card-orders__dir">
+                      <div class="card-orders__dir-icon">
+                        <svg class="svg" width="22" height="20">
+                          <use xlink:href="images/sprite.svg#folder"></use>
+                        </svg>
+                      </div>
+                      <div class="card-orders__dir-title"><a class="link" href="#">Одежда для сына</a></div>
+                    </div>
+                  </div>
+                  <div class="card-orders__column card-orders__column_desc">
+                    <table class="sub-card-orders-table card-orders__sub-table">
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__code"><a class="link" href="#">#345356</a></div>
+                          <time class="card-orders__date">15.06.2017, 10:56</time>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__control cp-order">
+                            <div class="cp-order__container">
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="13" height="13">
+                                    <use xlink:href="images/sprite.svg#remove"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="12">
+                                    <use xlink:href="images/sprite.svg#check"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="cp-order__column">
+                                <button class="cp-order__button">
+                                  <svg class="svg" width="16" height="16">
+                                    <use xlink:href="images/sprite.svg#edit"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="sub-card-orders-table__tr">
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__status"><span class="text_color_gray">Статус: </span><span class="text_color_green">Выкуплен</span><br>Оплачено 5680 ₽ </div>
+                        </td>
+                        <td class="sub-card-orders-table__td">
+                          <div class="card-orders__price">
+                            <div class="card-orders__yen"><b>¥ 804,4</b></div>
+                            <div class="card-orders__rubl"><b>₽</b> 7463,43</div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="card-orders__note"> <b>Примечание:</b> соображения высшего порядка, а также начало повседневной</div>
+                    <div class="card-orders__messages message-with-card-orders">
+                      <div class="message-with-card-orders__count"><a class="link" href="#">24 сообщения</a></div>
+                      <div class="message-with-card-orders__container">
+                        <div class="message-with-card-orders__column message-with-card-orders__column_pr"><img class="message-with-card-orders__pr" src="images/chat.jpg" width="44" height="44"></div>
+                        <div class="message-with-card-orders__column message-with-card-orders__column_text">
+                          <div class="message-with-card-orders__text">Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section-order text-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="h2 section-order__title">Добавьте свой первый товар</h2>
+            <p class="p section-order__slogan">Убедитесь в том, как это удобно</p>
+            <form class="section-order__form">
+              <input class="section-order__field" type="url" placeholder="Вставьте ссылку на страницу товара">
+              <button class="section-order__button button button_size_md button_theme_yellow">Добавить</button>
+            </form>
+            <p class="p section-order__note">Укажите в этом поле ссылку на страницу товара с сайта <a class="link" href="#">taobao.com</a>, <a class="link" href="#">tmall.com</a> или <a class="link" href="#">1688.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section-foo text_color_white">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-foo__container">
+              <div class="section-foo__column section-foo__column_company">
+                <div class="section-foo__logo" width="277" height="44" alt="Лого"></div>
+              </div>
+              <div class="section-foo__column section-foo__column_nav hidden-xs hidden-sm">
+                <nav class="section-foo__nav nav-foo">
+                  <ul class="nav-foo__list">
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">О нас</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Чат</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Форум</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Условия</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Отзывы</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Товары</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Вход/ Регистрация</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="section-foo__column section-foo__column_course"></div>
+              <div class="section-foo__column section-foo__column_info">
+                <div class="section-foo__sides">
+                  <div class="section-foo__side section-foo__side_course">
+                    <div class="section-foo__course course-for-today">
+                      <div class="course-for-today__label">Курс на сегодня</div>
+                      <div class="course-for-today__value">1 ¥ - <span class="text_color_yellow">9,5 <span class="rubl"></span></span></div>
+                    </div>
+                  </div>
+                  <div class="section-foo__side section-foo__side_schedule">
+                    <div class="section-foo__schedule">18 54 Москва Рабочий день с 4:00 до 13:00<br>23 54 Пекин Рабочий день с 9:00 до 18:00<br>ВЫХОДНОЙ ВОСКРЕСЕНЬЕ</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><!--[if lte IE 9]>
+    <script src="js/jquery.columnizer.js"></script>
+    <script>
+      $('.nav-foo').columnize({ columns: 2 });
+      $('.checkbox-list__list').columnize({ columns: 2 });
+      
+    </script><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Hyphenator/3.2.0/Hyphenator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.slick/latest/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+    <script src="js/main.js?ts=1507817131752"></script>
+  </body>
+</html>

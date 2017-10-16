@@ -1,0 +1,49 @@
+@-ms-viewport {
+	width: device-width;
+}
+@-o-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+.container-fluid {
+	max-width 1140px
+	margin auto
+}
+
+::selection {
+	background $color-yellow
+	color #282828
+}
+
+.page {
+	font-family Circe, sans-serif;
+	color $color-gray-brown
+	background-color #bcbcbc
+}
+
+.svg {
+	display inline-block
+	vertical-align middle
+	fill currentColor
+}
+
+.rubl {
+	&::before {
+		content "₽"
+	}
+}
+
+.inert {
+	text-decoration inherit
+	color inherit
+
+	&:hover,
+	&:focus,
+	&:active {
+		color inherit
+		text-decoration inherit
+	}
+}

@@ -1,0 +1,728 @@
+.section-header {
+	position sticky
+	top 0
+	left 0
+	width 100%
+	padding 20px 0 12px
+	background-color white
+	color #282828
+	box-shadow 0 10px 20px rgba(0, 0, 0, 0.15)
+
+	&__container {
+		display table
+		width 100%
+	}
+
+	&__column {
+		display table-cell
+		vertical-align middle
+
+		&_burger {
+			text-align right
+
+			@media (min-width $md) {
+				display none !important
+			}
+		}
+	}
+
+	&__logo {
+		height auto
+		width 90px
+		max-width 100%
+
+		@media (min-width $sm) {
+			width 175px
+		}
+
+		@media (min-width $sm) {
+		}
+	}
+
+	&__nav-wrap {
+		display table
+		width 100%
+		font-size 18px
+	}
+
+	&__nav-cell {
+		display table-cell
+	}
+
+	&__nav {
+		font-size 18px
+	}
+}
+
+.section-main {
+	background-size cover
+	background-position center
+	padding 50px 0 50px
+	color white
+
+	@media (min-width $md) {
+		min-height 700px
+		padding 170px 0 140px
+	}
+
+	&__title {
+		margin-bottom 20px
+
+		@media (min-width $md) {
+			max-width none
+		}
+	}
+
+	&__slogan {
+		margin-bottom 41px
+		font-size 16px
+		line-height 1.5
+
+		@media (min-width $sm) {
+			font-size 24px
+			max-width none
+		}
+	}
+
+	&__buttons {
+
+	}
+
+	&__button {
+		width 213px
+		max-width 100%
+		margin-right 20px
+		margin-bottom 10px
+
+		@media (min-width $sm) {
+			width 302px
+		}
+	}
+}
+
+.section-our-service {
+	padding 30px 0
+	background-color white
+
+	@media (min-width $sm) {
+		padding 75px 0 40px
+	}
+
+	&__title {
+		margin-bottom 10px
+
+		@media (min-width $sm) {
+			margin-bottom 20px
+		}
+	}
+
+	&__slogan {
+		margin-bottom 10px
+	}
+}
+
+.section-rec {
+	padding 30px 0
+	background url(../images/pattern.jpg)
+
+	@media (min-width $sm) {
+		padding 75px 0 80px
+	}
+
+	&__title {
+		margin-bottom 15px
+	}
+
+	&__slogan {
+		margin-bottom 25px
+
+		@media (min-width $sm) {
+			margin-bottom 45px
+		}
+	}
+
+	&__slider {
+		margin-bottom 20px
+
+		@media (min-width $sm) {
+			margin-bottom: 50px
+		}
+	}
+
+	&__link {
+		font-size: 18px
+	}
+
+}
+
+.section-order {
+	padding 60px 0
+	background url(../images/bg-order.jpg) center center / cover no-repeat
+	color white
+
+	@media (min-width $sm) {
+		padding 100px 0 66px
+	}
+
+	&__title {
+		margin-bottom 15px
+	}
+
+	&__slogan {
+		margin-bottom: 20px
+		font-weight: 300
+
+		@media (min-width $sm) {
+			margin-bottom: 35px
+		}
+	}
+
+	&__note {
+		margin-bottom 25px
+		font-size: 18px
+	}
+
+	&__form {
+		position: relative;
+		display: block
+		margin-bottom: 30px
+
+		@media (min-width $md) {
+			margin: 0 100px 30px
+		}
+	}
+
+	&__field {
+		display block
+		width 100%
+		height 47px
+		padding 10px 25px
+		margin-bottom 5px
+		box-shadow 0 10px 30px rgba(0, 0, 0, 0.1)
+		border-radius 35px
+		background-color #ffffff
+		border none
+		font-size 16px
+		color $color-gray
+
+		@media (min-width $xs) {
+			margin-bottom 0
+		}
+
+		@media (min-width $sm) {
+			height 69px
+		}
+	}
+
+	&__button {
+		position: absolute;
+		top 0
+		right: 0
+		width 265px
+
+		@media (max-width 767px) {
+			padding 14.5px
+			font-size 18px
+		}
+
+		@media (max-width 480px) {
+			position static
+			display: block
+			width: 100%
+		}
+	}
+}
+
+.section-order-conf {
+	padding 15px 0
+	background url(../images/pattern.jpg)
+
+	@media (min-width $sm) {
+		padding 45px 0
+	}
+
+	&__title {
+		margin-bottom 15px
+	}
+
+	&__table {
+		margin-bottom 50px
+	}
+
+	&__form-grid {
+		margin-bottom 30px
+
+		@media (min-width $sm) {
+			display table
+			width 100%
+			margin-bottom 45px
+		}
+
+		&-column {
+			@media (min-width $sm) {
+				display table-cell
+				vertical-align top
+			}
+
+			&_field {
+				@media (min-width $sm) {
+					width 500px
+				}
+			}
+
+			&_checkbox {
+				padding-top 40px
+
+				@media (min-width $sm) {
+					padding-left 30px
+					padding-top 0
+				}
+
+				@media (min-width $md) {
+					padding-left 100px
+				}
+			}
+		}
+	}
+
+	&__buttons {
+		text-align: center
+	}
+
+	&__button {
+		width: 200px
+		margin: 0 10px 10px
+
+		@media (min-width $sm) {
+			margin: 0 15px 10px
+		}
+	}
+}
+
+.section-orders {
+	padding 15px 0
+	background url(../images/pattern.jpg)
+
+	@media (min-width $sm) {
+		padding 45px 0
+	}
+
+	&__sides {
+		margin-bottom 20px
+	}
+
+	&__title {}
+
+	&__panel {
+		@media (min-width $md) {
+			float right
+		}
+	}
+
+	&__cards {
+		font-size 0
+
+		@media (min-width $md) {
+			margin 0 -15px
+		}
+	}
+
+	&__card {
+		display inline-block
+		vertical-align: middle
+		width 100%
+		margin-bottom 15px
+
+
+		@media (min-width $md) {
+			width 50%
+			padding 0 15px
+			margin-bottom 25px
+		}
+	}
+}
+
+.section-what {
+	padding 40px 0 10px
+	background-color white
+	color #282828
+
+	@media (min-width $sm) {
+		padding 75px 0
+	}
+
+	&__title {
+		margin-bottom 15px
+
+		@media (min-width $sm) {
+			margin-bottom 20px
+		}
+	}
+
+	&__slogan {
+		margin-bottom 30px;
+
+		@media (min-width $sm) {
+			margin-bottom: 70px
+		}
+	}
+}
+
+.section-co-worker {
+	padding: 35px 0 20px
+	background url(../images/pattern.jpg)
+
+	@media (min-width $sm) {
+		padding: 70px 0 50px
+	}
+
+	&__title {
+		margin-bottom: 15px
+	}
+
+	&__slogan {
+		margin-bottom 30px
+
+		@media (min-width $sm) {
+			margin-bottom: 75px
+		}
+	}
+
+	&__cards {
+		font-size: 0
+	}
+
+	&__card {
+		display: inline-block;
+		vertical-align: top
+		padding: 0 15px
+		margin-bottom: 25px;
+		width: 80%;
+
+		@media (min-width $xs) {
+			width: 50%;
+		}
+
+		@media (min-width $md) {
+			width: 25%;
+		}
+	}
+}
+
+.section-helps {
+	padding: 35px 0 25px
+	background: white
+	text-align: center
+
+	@media (min-width $sm) {
+		padding: 75px 0 80px
+	}
+
+	&__title {
+		margin-bottom: 35px;
+
+		@media (min-width $sm) {
+			margin-bottom: 68px;
+		}
+	}
+
+	&__cards {
+		font-size 0
+	}
+
+	&__card {
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom 20px
+
+		@media (min-width $xs) {
+			width 50%
+			padding: 0 10px;
+		}
+
+		@media (min-width $md) {
+			width 33.333%
+			padding: 0 15px;
+			margin-bottom 30px
+		}
+	}
+
+}
+
+.section-chat {
+	padding 35px 0 25px
+	background url(../images/pattern.jpg)
+
+	&_with_basket {
+		color white
+		background url(../images/bg-chat-with-basket.jpg) center center / cover no-repeat
+	}
+
+	@media (min-width $sm) {
+		padding 75px 0
+	}
+
+	&__title {
+		margin-bottom 25px
+
+		@media (min-width $sm) {
+			margin-bottom 70px
+		}
+	}
+
+	&__place {
+		overflow-x auto
+		max-height 660px
+	}
+}
+
+.section-news {
+	padding 35px 0
+	background-color white
+
+	@media (min-width $sm) {
+		padding 80px 0
+	}
+
+	&__title {
+		margin-bottom 35px
+		color #282828
+
+		@media (min-width $sm) {
+			margin-bottom 70px
+		}
+	}
+
+	&__button {
+		width 270px
+	}
+}
+
+.section-foo {
+	padding 30px 0
+	background url(../images/pattern-dark.jpg)
+
+	@media (min-width $sm) {
+		padding 60px 0
+	}
+
+	&__container {
+		@media (min-width $xs) {
+			display table
+			width 100%
+		}
+	}
+
+	&__column {
+		margin-bottom 5px
+
+		@media (min-width $xs) {
+			display table-cell
+			vertical-align top
+			margin 0
+		}
+
+		&_company {
+			@media (min-width $md) {
+				// width 280px
+				padding-right 20px
+			}
+		}
+
+		&_nav {
+			text-align left
+			padding-right 20px
+		}
+
+		&_contact {
+			text-align left
+
+			@media (min-width $md) {
+				text-align right
+				width 240px
+				padding-left 20px
+			}
+		}
+	}
+
+	&__sides {
+
+
+		@media (min-width $lg) {
+			display table
+			width 100%
+		}
+	}
+
+	&__side {
+
+
+		@media (min-width $lg) {
+			display table-cell
+			padding-right 20px
+		}
+
+		&:last-child {
+			padding-right 0
+		}
+	}
+
+
+	&__logo {
+
+		width: 105px
+		height: 50px
+		background: rebeccapurple
+
+		@media (min-width $sm) {
+			width 175px
+		}
+	}
+
+	&__desc {
+		font-size 15px
+		font-weight 400
+		line-height 24px
+	}
+
+
+	&__schedule {
+		font-size 14px
+		font-weight 400
+		line-height 20px
+
+		@media (min-width $xs) {
+			font-size 16px
+		}
+
+
+		@media (min-width $sm) {
+			font-size 20px
+			line-height 26px
+		}
+	}
+
+	&__copy {
+		padding 20px 0
+		border-top 1px solid rgba(255, 255, 255, 0.15)
+		font-size 15px
+		text-align center
+	}
+}
+
+.section-basket {
+	padding: 50px 0 55px
+	background url(../images/pattern.jpg)
+
+	&__title {
+		margin-bottom 20px
+	}
+
+	&__cards {
+		margin-bottom: 35px
+	}
+
+	&__card {
+		margin-bottom 9px
+
+		@media (min-width $md) {
+			margin-bottom 18px
+		}
+	}
+
+	&__buttons {
+		text-align: center
+	}
+
+	&__button {
+		width: 200px
+		margin: 0 10px 10px
+
+		@media (min-width $sm) {
+			margin: 0 15px 10px
+		}
+	}
+}
+
+// .section-rec-page {
+// 	padding 50px 0
+// 	color white
+// 	background #0a162e
+//
+// 	&__header {
+// 		margin 0 0 40px
+//
+// 		@media (min-width $md) {
+// 			display table
+// 			width 100%
+// 		}
+// 	}
+//
+// 	&__side {
+// 		padding 10px 0
+//
+// 		@media (min-width $md) {
+// 			display table-cell
+// 		}
+//
+// 		&_nav {
+// 			@media (min-width $md) {
+// 				text-align right
+// 			}
+// 		}
+// 	}
+//
+// 	&__tags {
+// 		margin 0 0 40px
+// 	}
+//
+// 	&__pagination {
+// 		margin-top 45px
+// 	}
+// }
+//
+// .inner-chat-with-rec-page {
+// 	padding 50px 0
+// 	text-align center
+//
+// 	&__title {
+// 		margin-bottom 50px
+// 	}
+//
+// 	&__place {
+// 		overflow-x auto
+// 		max-height 580px
+// 		background rgba(255, 255, 255, 0.1)
+// 	}
+// }
+//
+// .section-reviews {
+// 	padding-bottom 50px
+// 	background-color #0a162e
+// 	color white
+// 	text-align center
+//
+// 	&__plus {
+// 		padding 45px 0 20px
+// 	}
+//
+// 	&__title {
+// 		margin-bottom 50px
+// 	}
+//
+// 	&__tabs {
+// 		margin-bottom 50px
+// 	}
+//
+// 	&__form {
+// 		margin-bottom 50px
+// 		padding 30px 30px 20px
+// 		box-shadow 0 10px 30px rgba(0, 0, 0, 0.1)
+// 		background-color $color-deep-purple
+// 	}
+//
+// 	&__button {
+// 		width 280px
+// 		margin-top 50px
+// 	}
+// }

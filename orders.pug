@@ -1,0 +1,71 @@
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+	body.page
+		include pug/header
+		.section-orders: .container-fluid: .row: .col-xs-12
+			.section-orders__sides.sides
+				.sides__column: h2.h2.section-orders__title Ваши заказы
+				.sides__column: .section-orders__panel.panel-orders
+					.panel-orders__column.panel-orders__column_select: label.panel-orders__select-wrap: select.select.panel-orders__select
+						option Показать все
+						option Показать все
+						option Показать все
+						option Показать все
+					.panel-orders__column.panel-orders__column_select: label.panel-orders__select-wrap: select.select.panel-orders__select
+						option Одежда для сына
+						option Одежда для сына
+						option Одежда для сына
+						option Одежда для сына
+					.panel-orders__column: button.panel-orders__button: svg.svg(width="18" height="19"): use(xlink:href="images/sprite.svg#rename")
+					.panel-orders__column: button.panel-orders__button: svg.svg(width="23" height="20"): use(xlink:href="images/sprite.svg#create-folder")
+			.section-orders__cards: each item in [1, 2, 3, 4, 5, 6]
+				.section-orders__card: .card-orders
+					.card-orders__column.card-orders__column_pr
+						.card-orders__prs: each prs in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+							img.card-orders__pr(src="images/orders/" + prs + ".jpg" width="63" height="63")
+						.card-orders__count 
+							b 69
+							|  товаров в 
+							b 4
+							|  позициях
+						.card-orders__dir
+							.card-orders__dir-icon: svg.svg(width="22" height="20"): use(xlink:href="images/sprite.svg#folder")
+							.card-orders__dir-title: a.link(href="#") Одежда для сына
+						
+					.card-orders__column.card-orders__column_desc
+						table.sub-card-orders-table.card-orders__sub-table
+							tr.sub-card-orders-table__tr
+								td.sub-card-orders-table__td
+									.card-orders__code: a.link(href="#") #345356
+									time.card-orders__date 15.06.2017, 10:56
+								td.sub-card-orders-table__td: .card-orders__control.cp-order: .cp-order__container
+									.cp-order__column: button.cp-order__button: svg.svg(width="13" height="13"): use(xlink:href="images/sprite.svg#remove")
+									.cp-order__column: button.cp-order__button: svg.svg(width="16" height="12"): use(xlink:href="images/sprite.svg#check")
+									.cp-order__column: button.cp-order__button: svg.svg(width="16" height="16"): use(xlink:href="images/sprite.svg#edit")
+							tr.sub-card-orders-table__tr
+								td.sub-card-orders-table__td: .card-orders__status
+									span.text_color_gray Статус: 
+									span.text_color_green Выкуплен
+									br
+									| Оплачено 5680 ₽ 
+								td.sub-card-orders-table__td: .card-orders__price
+									.card-orders__yen: b ¥ 804,4
+									.card-orders__rubl
+										b ₽
+										|  7463,43
+									
+						.card-orders__note 
+							b Примечание:
+							|  соображения высшего порядка, а также начало повседневной
+						.card-orders__messages.message-with-card-orders
+							.message-with-card-orders__count: a.link(href="#") 24 сообщения
+							.message-with-card-orders__container
+								.message-with-card-orders__column.message-with-card-orders__column_pr
+									img.message-with-card-orders__pr(src="images/chat.jpg" width="44" height="44")
+								.message-with-card-orders__column.message-with-card-orders__column_text
+									.message-with-card-orders__text Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))
+		include pug/order
+		include pug/foo
+		include pug/scripts

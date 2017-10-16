@@ -1,0 +1,541 @@
+nav__list()
+	list-style-type none
+	padding 0
+	margin 0
+	font-size 0
+
+	@supports(flex-wrap wrap)
+		display flex
+		flex-wrap wrap
+		align-items center
+		font-size inherit
+
+
+nav__item()
+	display inline-block
+	vertical-align middle
+	font-size 16px
+	line-height 20px
+
+nav__link()
+	color inherit
+
+	&:hover,
+	&:focus,
+	&:active
+		color inherit
+
+.nav-top {
+	font-weight 700
+
+	&__list {
+		display table
+		width 100%
+		list-style-type none
+		padding 0
+		margin 0
+	}
+
+	&__item {
+		nav__item()
+		display table-cell
+		margin-right 15px
+
+		@media (min-width $lg) {
+			margin-right 30px
+		}
+
+		&:last-child {
+			margin-right 0
+		}
+	}
+
+	&__link {
+		nav__link()
+
+		&:hover {
+			position relative
+			text-decoration none
+
+			&:before {
+				content ""
+				display block
+				position absolute
+				top 100%
+				left 0
+				height 6px
+				width 100%
+				background-color #ffdb00
+			}
+		}
+	}
+}
+
+.nav-top-auth {
+	font-weight 700
+
+	&__list {
+		list-style-type none
+		padding 0
+		margin 0
+	}
+
+	&__item {
+		nav__item()
+
+		&:after {
+			content "/"
+			margin 0 3px 0 5px
+			vertical-align middle
+		}
+
+		&:last-child:after {
+			display none
+		}
+	}
+
+	&__link {
+		nav__link()
+		vertical-align middle
+	}
+}
+
+.nav-contact {
+	&__list {
+		list-style-type none
+		padding 0
+		margin 0
+	}
+
+	&__item {
+		margin-bottom 10px
+		text-align left
+
+		&:last-child {
+			margin-bottom 0
+		}
+	}
+
+	&__icon {
+		display inline-block
+		vertical-align middle
+		width 25px
+		text-align center
+		margin-right 5px
+	}
+
+	&__text {
+		display inline-block
+		vertical-align middle
+	}
+}
+
+.nav-foo {
+	font-size 16px
+	line-height 1.6
+
+	@media (min-width $md) {
+		max-width 450px
+		margin auto
+	}
+
+	&__list {
+		list-style-type none
+		padding 0
+		margin 0
+
+
+		@media (min-width $xs) {
+			columns 2
+			column-gap 0
+		}
+	}
+
+	&__item {
+		padding-bottom 5px
+		break-inside avoid
+	}
+
+	&__link {
+		color inherit
+		text-decoration: underline;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color inherit
+			text-decoration: none
+		}
+	}
+}
+
+.nav-stats {
+	display table
+	list-style-type none
+	padding 0
+	margin 0
+
+	&__item {
+		display table-cell
+		padding-right 10px
+
+		&:last-child {
+			padding-right 0
+		}
+	}
+
+	&__icon {
+		display inline-block
+		vertical-align middle
+		padding-right 5px
+		vertical-align middle
+		height 25px
+	}
+
+	&__text {
+		display inline-block
+		vertical-align middle
+		font-size 16px
+		height 25px
+	}
+}
+
+.nav-rec {
+	font-size 18px
+	font-weight 400
+	line-height 20px
+
+	@media (min-width $lg) {
+		font-size 22px
+		font-weight 400
+		line-height 20px
+	}
+
+	&__list {
+		list-style-type none
+		padding 0
+		margin 0
+	}
+
+	&__item {
+		display inline-block
+		margin-right 20px
+
+		@media (min-width $lg) {
+			margin-right 40px
+		}
+
+		&.active {
+			color $color-yellow-green
+		}
+
+		&:last-child {
+			margin-right 0
+		}
+	}
+}
+
+.nav-tags {
+	&__list {
+		list-style-type none
+		padding 0
+		margin 0
+	}
+
+	&__item {
+		display inline-block
+		margin-right 10px
+		margin-bottom 15px
+		font-size 15px
+		line-height 1
+
+		&.active {
+			color $color-yellow-green
+		}
+
+		&:last-child {
+			margin-right 0
+		}
+	}
+}
+
+.nav-pagination {
+	padding 10px 0
+	background $color-deep-purple
+	font-size 22px
+	line-height 30px
+	text-align center
+
+	&__list {
+		list-style-type none
+		padding 0
+		margin 0
+	}
+
+	&__item {
+		display inline-block
+		margin 0 12px
+
+		&.active {
+			font-weight 900
+			color $color-signal-orange
+		}
+	}
+
+
+	&__link {
+		text-decoration none
+
+		&:hover,
+		&:active,
+		&:focus {
+			opacity 0.8
+		}
+	}
+}
+
+.nav-tabs-reviews {
+	&__list {
+		list-style-type none
+		margin 0
+		padding 0
+		text-align center
+		font-size 22px
+	}
+
+	&__item {
+		display inline-block
+		margin-right 40px
+
+		&:last-child {
+			margin-right 0
+		}
+
+		&:hover,
+		&.active {
+			color $color-yellow-green
+		}
+	}
+
+	&__link {
+		text-decoration none
+	}
+
+	&__icon {
+		display inline-block
+		vertical-align middle
+	}
+
+	&__text {
+		display inline-block
+		text-decoration underline
+		vertical-align middle
+	}
+
+	&__link:hover &__text {
+		text-decoration none
+	}
+}
+
+.nav-popup {
+	font-size 20px
+	font-weight 700
+	text-transform uppercase
+
+	&__list {
+		list-style-type none
+		margin 0
+		padding 0
+	}
+
+	&__item {
+		display block
+		margin-bottom 10px
+	}
+
+	&__link {
+		color inherit
+
+		&:hover,
+		&:focus,
+		&:active {
+			color inherit
+		}
+	}
+}
+
+/*
+.nav-aside {
+	list-style-type none
+	padding 0
+	margin 0
+	font-size 16px
+	text-align left
+
+	&__item {
+		display inline
+
+		@media (min-width $md) {
+			display block
+			margin-bottom 15px
+		}
+
+		&_active {
+			color white
+
+			@media (min-width $md) {
+				color $color-orange-red
+			}
+		}
+
+		&:last-child {
+			margin-bottom 0
+		}
+	}
+
+	&__link {
+		display inline-block
+		padding 10px
+		margin 0 3px 5px 0
+		color inherit
+		background #f7f7f7
+
+		@media (min-width $xs) {
+			padding 19px 20px
+			margin 0 5px 10px 0
+		}
+
+		@media (min-width $md) {
+			display inline
+			background transparent
+			padding 0
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			color inherit
+		}
+	}
+
+	&__item_active &__link {
+		background $color-orange-red
+
+		@media (min-width $md) {
+			background transparent
+			color
+		}
+	}
+}
+
+.nav-top {
+	font-size 15px
+	color #343434
+	text-transform uppercase
+
+	&__list {
+		display table
+		width 100%
+		list-style-type none
+		padding 0
+		margin 0
+
+		@supports (display flex) {
+			display flex
+			justify-content space-between
+		}
+	}
+
+	&__item {
+		display table-cell
+		vertical-align middle
+
+		@supports (display flex) {
+			display block
+		}
+	}
+
+	&__link {
+		color inherit
+		text-decoration none
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration underline
+			color inherit
+		}
+	}
+}
+
+.nav-foo {
+	color #808080
+
+	&__list {
+		list-style-type none
+		padding 0
+		margin 0
+		columns 2
+		column-gap 0
+	}
+
+	&__item {
+		padding-bottom 5px
+		break-inside avoid
+	}
+
+	&__link {
+		color inherit
+
+		&:hover,
+		&:focus,
+		&:active {
+			color inherit
+		}
+	}
+}
+
+
+
+.nav-tags {
+	list-style-type none
+	padding 0
+	margin 0
+	font-size 16px
+
+	&__item {
+		display inline
+		margin 15px
+
+		&:hover,
+		&_active {
+			color $color-orange-red
+		}
+
+		&:first-child {
+			margin-left 0
+		}
+
+		&:last-child {
+			mr0
+		}
+	}
+
+	&__item_active &__link {
+		text-decoration none
+		cursor default
+	}
+
+	&__link {
+		text-decoration underline
+		color inherit
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration none
+			color inherit
+		}
+	}
+}
+*/

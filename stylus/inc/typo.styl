@@ -1,0 +1,143 @@
+.text {
+	&_color {
+		&_white {
+			color white
+		}
+
+		&_gray {
+			color #808080
+		}
+
+		&_yellow {
+			color #ffda00
+		}
+
+		&_green {
+			color $color-green
+		}
+
+		&_cornflower {
+			color $color-cornflower
+		}
+	}
+}
+
+.h1 {
+	margin 0
+	font-size 26px
+	font-weight 800
+
+	@media (min-width $xs) {
+		font-size 40px
+	}
+
+	@media (min-width $md) {
+		font-size 76px
+
+	}
+}
+
+.p {
+
+	font-size 18px
+	line-height 1
+
+	@media (min-width $sm) {
+		font-size 24px
+	}
+}
+
+.h2 {
+	margin 0
+	font-size 26px
+	font-weight 900
+
+	@media (min-width $sm) {
+		font-size 40px
+	}
+}
+
+.link {
+	text-decoration underline
+	color inherit
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration none
+		color inherit
+	}
+}
+
+/*
+.pagination {
+
+
+	&>li>a,
+	&>li>span {
+		margin 0 5px
+	}
+
+	&>li>a:hover,
+	&>li>span:hover {
+		color $color-gray-brown
+	}
+
+	&>li>a,
+	&>li>span,
+	&>li:first-child>a,
+	&>li:first-child>span,
+	&>li:last-child>a,
+	&>li:last-child>span {
+		min-width 40px
+		height 40px
+		border-radius 50%
+		font-size 14px
+		padding 9px 6px
+	}
+
+
+	&>.active>a,
+	&>.active>a:focus,
+	&>.active>a:hover,
+	&>.active>span,
+	&>.active>span:focus,
+	&>.active>span:hover {
+		color white
+		background $color-orange-red
+		border-color $color-orange-red
+	}
+
+	&>li>span.pagination__result {
+		border-radius 0
+		border none
+
+		&,
+		&:hover {
+			color $color-gray-brown
+			background transparent
+		}
+	}
+}
+
+.checkbox-list {
+
+	&__title {
+		font-size 18px
+		font-weight 700
+		margin-bottom 15px
+	}
+
+	&__item {
+		display block
+
+		font-size 16px
+		font-weight 400
+	}
+
+	&__checkbox {
+		margin-right 5px
+	}
+}
+
+*/

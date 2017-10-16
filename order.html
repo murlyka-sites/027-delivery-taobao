@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta content="telephone=no" name="format-detection">
+    <title>delivery taobao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css"><!--[if lte IE 8]>
+<![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css?ts=1507817128288">
+    <link rel="stylesheet" href="css/style.css?ts=1507817128288">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css"><!--[if lte IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <style>
+      .panel-orders__select-wrap::before {
+      	z-index: 2;
+      	display: none;
+      }
+    </style><![endif]-->
+  </head>
+  <body class="page">
+    <div class="header-sticky">
+      <header class="section-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="section-header__container">
+                <div class="section-header__column section-header__column_header">
+                  <div class="section-header__logo img-responsive" style="height: 45px; background: rebeccapurple;"></div>
+                </div>
+                <div class="section-header__column section-header__column_course">
+                  <div class="course-for-today">
+                    <div class="course-for-today__label">Курс на сегодня:</div>
+                    <div class="course-for-today__value">1 ¥ = <span>9.5 <span class="rubl"></span></span></div>
+                  </div>
+                </div>
+                <div class="section-header__column section-header__column_nav hidden-xs hidden-sm">
+                  <div class="section-header__nav">
+                    <nav class="nav-top">
+                      <ul class="nav-top__list">
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">О нас</a></li>
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">Чат</a></li>
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">Форум</a></li>
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">Условия</a></li>
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">Отзывы</a></li>
+                        <li class="nav-top__item"><a class="nav-top__link" href="#">Товары</a></li>
+                        <li class="nav-top__item nav-top__item_auth">
+                          <nav class="nav-top-auth">
+                            <ul class="nav-top-auth__list">
+                              <li class="nav-top-auth__item"><a class="nav-top-auth__link" href="#">Вход</a></li>
+                              <li class="nav-top-auth__item"><a class="nav-top-auth__link" href="#">Регистрация</a></li>
+                            </ul>
+                          </nav>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="section-header__column section-header__column_burger"><a class="inert" href="#top-nav" data-fancybox>
+                    <svg class="svg" width="24" height="24">
+                      <use xlink:href="images/sprite.svg#burger"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="hidden">
+        <div class="popup-top-nav" id="top-nav">
+          <div class="popup-top-nav__nav nav-popup">
+            <ul class="nav-popup__list">
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">О нас</a></li>
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">Чат</a></li>
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">Форум</a></li>
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">Условия</a></li>
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">Отзывы</a></li>
+              <li class="nav-popup__item"><a class="nav-popup__link" href="#">Товары</a></li>
+            </ul>
+          </div>
+          <div class="popup-top-nav__auth-and-registration auth-and-registration">
+            <nav class="nav-top-auth">
+              <ul class="nav-top-auth__list nav-top-auth__list_slash">
+                <li class="nav-top-auth__item"><a class="nav-top-auth__link" href="#">Вход</a></li>
+                <li class="nav-top-auth__item"><a class="nav-top-auth__link" href="#">Регистрация			</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section-order-conf">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="h2 section-order-conf__title">Подтверждения заказа</h2>
+            <div class="section-order-conf__table table-wrap">
+              <table class="table-order">
+                <tr class="table-order__tr">
+                  <th class="table-order__th">Товар</th>
+                  <th class="table-order__th"> </th>
+                  <th class="table-order__th">Кол-во</th>
+                  <th class="table-order__th">Сумма</th>
+                  <th class="table-order__th hidden-xs">Итого</th>
+                </tr>
+                <tr class="table-order__tr card-order-conf">
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_pr"><img class="img-responsive card-order-conf__pr" src="images/basket-pr.jpg" width="108" height="82"></td>
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_title"><a class="card-order-conf__link" href="#">fengyioo South Korea A. by Bom super baby leaves cool soothing moisturizing mask bingning leaf 10 bag mail</a></td>
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_count">
+                    <div class="card-order-conf__count"><b>69</b> товаров</div>
+                  </td>
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_price">
+                    <div class="card-order-conf__price">
+                      <div class="card-order-conf__yen"><b>¥&nbsp;804,4</b></div>
+                      <div class="card-order-conf__rubl">₽&nbsp;7463,43</div>
+                    </div>
+                  </td>
+                  <td class="hidden-xs table-order__td card-order-conf__column card-order-conf__column_price">
+                    <div class="card-order-conf__price">
+                      <div class="card-order-conf__yen"><b>¥&nbsp;804,4</b></div>
+                      <div class="card-order-conf__rubl">₽&nbsp;7463,43</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-order__tr card-order-conf">
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_pr"><img class="img-responsive card-order-conf__pr" src="images/basket-pr.jpg" width="108" height="82"></td>
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_title"><a class="card-order-conf__link" href="#">fengyioo South Korea A. by Bom super baby leaves cool soothing moisturizing mask bingning leaf 10 bag mail</a></td>
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_count">
+                    <div class="card-order-conf__count"><b>69</b> товаров</div>
+                  </td>
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_price">
+                    <div class="card-order-conf__price">
+                      <div class="card-order-conf__yen"><b>¥&nbsp;804,4</b></div>
+                      <div class="card-order-conf__rubl">₽&nbsp;7463,43</div>
+                    </div>
+                  </td>
+                  <td class="hidden-xs table-order__td card-order-conf__column card-order-conf__column_price">
+                    <div class="card-order-conf__price">
+                      <div class="card-order-conf__yen"><b>¥&nbsp;804,4</b></div>
+                      <div class="card-order-conf__rubl">₽&nbsp;7463,43</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-order__tr card-order-conf">
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_pr"><img class="img-responsive card-order-conf__pr" src="images/basket-pr.jpg" width="108" height="82"></td>
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_title"><a class="card-order-conf__link" href="#">fengyioo South Korea A. by Bom super baby leaves cool soothing moisturizing mask bingning leaf 10 bag mail</a></td>
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_count">
+                    <div class="card-order-conf__count"><b>69</b> товаров</div>
+                  </td>
+                  <td class="table-order__td card-order-conf__column card-order-conf__column_price">
+                    <div class="card-order-conf__price">
+                      <div class="card-order-conf__yen"><b>¥&nbsp;804,4</b></div>
+                      <div class="card-order-conf__rubl">₽&nbsp;7463,43</div>
+                    </div>
+                  </td>
+                  <td class="hidden-xs table-order__td card-order-conf__column card-order-conf__column_price">
+                    <div class="card-order-conf__price">
+                      <div class="card-order-conf__yen"><b>¥&nbsp;804,4</b></div>
+                      <div class="card-order-conf__rubl">₽&nbsp;7463,43</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-order__tr">
+                  <td class="table-order__td table-order__td_total" colspan="5">Итого с учетом комиссии: <span class="table-order__sum">1 171.80 ₽</span></td>
+                </tr>
+              </table>
+            </div>
+            <div class="section-order-conf__form-grid">
+              <div class="section-order-conf__form-grid-column section-order-conf__form-grid-column_field">
+                <table class="form-with-personal">
+                  <tbody>
+                    <tr class="form-with-personal__row">
+                      <td class="form-with-personal__column form-with-personal__column_label form-with-personal__column_required">Регион</td>
+                      <td class="form-with-personal__column form-with-personal__column_field">
+                        <input class="field field_size_sm field_theme_gray" type="text">
+                      </td>
+                    </tr>
+                    <tr class="form-with-personal__row">
+                      <td class="form-with-personal__column form-with-personal__column_label form-with-personal__column_required">Город</td>
+                      <td class="form-with-personal__column form-with-personal__column_field">
+                        <input class="field field_size_sm field_theme_gray" type="text">
+                      </td>
+                    </tr>
+                    <tr class="form-with-personal__row">
+                      <td class="form-with-personal__column form-with-personal__column_label form-with-personal__column_required">Индекс</td>
+                      <td class="form-with-personal__column form-with-personal__column_field">
+                        <input class="field field_size_sm field_theme_gray" type="text">
+                      </td>
+                    </tr>
+                    <tr class="form-with-personal__row">
+                      <td class="form-with-personal__column form-with-personal__column_label form-with-personal__column_required">Адрес</td>
+                      <td class="form-with-personal__column form-with-personal__column_field">
+                        <input class="field field_size_sm field_theme_gray" type="text">
+                      </td>
+                    </tr>
+                    <tr class="form-with-personal__row">
+                      <td class="form-with-personal__column form-with-personal__column_label form-with-personal__column_required">Ф.И.О.</td>
+                      <td class="form-with-personal__column form-with-personal__column_field">
+                        <input class="field field_size_sm field_theme_gray" type="text">
+                      </td>
+                    </tr>
+                    <tr class="form-with-personal__row">
+                      <td class="form-with-personal__column form-with-personal__column_label form-with-personal__column_required">Телефон</td>
+                      <td class="form-with-personal__column form-with-personal__column_field">
+                        <input class="field field_size_sm field_theme_gray" type="text">
+                      </td>
+                    </tr>
+                    <tr class="form-with-personal__row">
+                      <td class="form-with-personal__column form-with-personal__column_label form-with-personal__column_required">Эл.почта</td>
+                      <td class="form-with-personal__column form-with-personal__column_field">
+                        <input class="field field_size_sm field_theme_gray" type="text">
+                      </td>
+                    </tr>
+                    <tr class="form-with-personal__row">
+                      <td class="form-with-personal__column form-with-personal__column_label form-with-personal__column_required">Доп.Данные</td>
+                      <td class="form-with-personal__column form-with-personal__column_field">
+                        <input class="field field_size_sm field_theme_gray" type="text">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="section-order-conf__form-grid-column section-order-conf__form-grid-column_checkbox">
+                <div class="checkbox-list">
+                  <div class="checkbox-list__title">Выберите способ доставки</div>
+                  <div class="checkbox-list__slogan">При выборе почты ЕМС или Почты России цена за таможенную очистку 250р\кг + предоплата на отправку по России (зависит от объема и веса)</div>
+                  <div class="checkbox-list__list">
+                    <label class="checkbox-list__item checkboxed">
+                      <input class="checkboxed__input" type="radio" name="delivery">
+                      <div class="checkboxed__text">EMS</div>
+                    </label>
+                    <label class="checkbox-list__item checkboxed">
+                      <input class="checkboxed__input" type="radio" name="delivery">
+                      <div class="checkboxed__text">Почта России 1 класс</div>
+                    </label>
+                    <label class="checkbox-list__item checkboxed">
+                      <input class="checkboxed__input" type="radio" name="delivery">
+                      <div class="checkboxed__text">Почта России</div>
+                    </label>
+                    <label class="checkbox-list__item checkboxed">
+                      <input class="checkboxed__input" type="radio" name="delivery">
+                      <div class="checkboxed__text">Энергия-авто</div>
+                    </label>
+                    <label class="checkbox-list__item checkboxed">
+                      <input class="checkboxed__input" type="radio" name="delivery">
+                      <div class="checkboxed__text">Энергия-авиа</div>
+                    </label>
+                    <label class="checkbox-list__item checkboxed">
+                      <input class="checkboxed__input" type="radio" name="delivery">
+                      <div class="checkboxed__text">Энергия-ж/д</div>
+                    </label>
+                    <label class="checkbox-list__item checkboxed">
+                      <input class="checkboxed__input" type="radio" name="delivery">
+                      <div class="checkboxed__text">Деловые линии</div>
+                    </label>
+                    <label class="checkbox-list__item checkboxed">
+                      <input class="checkboxed__input" type="radio" name="delivery">
+                      <div class="checkboxed__text">ТК Ратэк</div>
+                    </label>
+                    <label class="checkbox-list__item checkboxed">
+                      <input class="checkboxed__input" type="radio" name="delivery">
+                      <div class="checkboxed__text">КИТ</div>
+                    </label>
+                    <label class="checkbox-list__item checkboxed">
+                      <input class="checkboxed__input" type="radio" name="delivery">
+                      <div class="checkboxed__text">ЖелДорЭкспедиция</div>
+                    </label>
+                    <label class="checkbox-list__item checkboxed">
+                      <input class="checkboxed__input" type="radio" name="delivery">
+                      <div class="checkboxed__text">Самовывоз</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-order-conf__buttons">
+              <button class="section-order-conf__button button button_theme_green button_size_xs">Сохранить заказ</button>
+              <button class="section-order-conf__button button button_theme_yellow button_size_xs">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section-foo text_color_white">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-foo__container">
+              <div class="section-foo__column section-foo__column_company">
+                <div class="section-foo__logo" width="277" height="44" alt="Лого"></div>
+              </div>
+              <div class="section-foo__column section-foo__column_nav hidden-xs hidden-sm">
+                <nav class="section-foo__nav nav-foo">
+                  <ul class="nav-foo__list">
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">О нас</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Чат</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Форум</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Условия</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Отзывы</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Товары</a></li>
+                    <li class="nav-foo__item"><a class="nav-foo__link" href="#">Вход/ Регистрация</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="section-foo__column section-foo__column_course"></div>
+              <div class="section-foo__column section-foo__column_info">
+                <div class="section-foo__sides">
+                  <div class="section-foo__side section-foo__side_course">
+                    <div class="section-foo__course course-for-today">
+                      <div class="course-for-today__label">Курс на сегодня</div>
+                      <div class="course-for-today__value">1 ¥ - <span class="text_color_yellow">9,5 <span class="rubl"></span></span></div>
+                    </div>
+                  </div>
+                  <div class="section-foo__side section-foo__side_schedule">
+                    <div class="section-foo__schedule">18 54 Москва Рабочий день с 4:00 до 13:00<br>23 54 Пекин Рабочий день с 9:00 до 18:00<br>ВЫХОДНОЙ ВОСКРЕСЕНЬЕ</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><!--[if lte IE 9]>
+    <script src="js/jquery.columnizer.js"></script>
+    <script>
+      $('.nav-foo').columnize({ columns: 2 });
+      $('.checkbox-list__list').columnize({ columns: 2 });
+      
+    </script><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Hyphenator/3.2.0/Hyphenator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.slick/latest/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+    <script src="js/main.js?ts=1507817128288"></script>
+  </body>
+</html>

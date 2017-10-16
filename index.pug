@@ -1,0 +1,215 @@
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+	body.page
+		include pug/header
+	
+		.slider.slider_main: each i in [1, 2, 3]
+			div: section.section-main(style="background-image: url(images/bg-main.jpg);")
+				.container: .row: .col-xs-9.col-sm-6.col-md-8
+					h1.h1.section-main__title Заказы из любой точки мира
+					p.section-main__slogan Доступно всегда, для всех и с любого устройства!
+					.section-main__buttons
+						a.button.button_size_lg.button_theme_yellow.section-main__button(href="#") Сделать заказ
+		
+		section.section-our-service.text-center
+			.container: .row: .col-xs-12
+				h2.h2.section-our-service__title Предоставляем услуги выкупа до 5%
+				p.p.section-our-service__slogan Оптовые и розничные закупки с китайских сайтов
+			.container: .row
+				.col-xs-12.col-sm-4
+					figure.card-our-service
+						img.card-our-service__pr.img-responsive(src="images/our-service-1.jpg" width="350" height="218" alt="taobao.com")
+						.card-our-service__title: a.link(href="#") www.taobao.com
+
+				.col-xs-12.col-sm-4
+					figure.card-our-service
+						img.card-our-service__pr.img-responsive(src="images/our-service-2.jpg" width="350" height="218" alt="tmaill.com")
+						.card-our-service__title: a.link(href="#") www.tmall.com
+
+
+				.col-xs-12.col-sm-4
+					figure.card-our-service
+						img.card-our-service__pr.img-responsive(src="images/our-service-3.jpg" width="350" height="218" alt="1688.com")
+						.card-our-service__title: a.link(href="#") www.1688.com
+		
+		section.section-rec.text-center
+			.container: .row: .col-xs-12
+				h2.h2.section-rec__title.text_color_signal-orange Последние покупки пользователей
+				p.p.section-rec__slogan Самые лучшие предложения только от нашего сервиса
+				.slider-wrap
+					.section-rec__slider.slider.slider_rec(data-nav="#slider-rec-nav")
+						.slider__slide: .card-rec
+							a.block(href="#")
+								img.img-responsive.card-rec__pr(src="images/rec-1.jpg" width="255" height="255" alt="Рекомендация")
+							.card-rec__title: a.inert(href="#") Ноутбук Asus X540LA&nbsp;-&nbsp;XX360T
+							.card-rec__price 21 559 руб.
+						.slider__slide: .card-rec
+							a.block(href="#")
+								img.img-responsive.card-rec__pr(src="images/rec-2.jpg" width="255" height="255" alt="Рекомендация")
+							.card-rec__title: a.inert(href="#") Мультиварка Redmond RMC-M70
+							.card-rec__price 3 308 руб.
+						.slider__slide: .card-rec
+							a.block(href="#")
+								img.img-responsive.card-rec__pr(src="images/rec-3.jpg" width="255" height="255" alt="Рекомендация")
+							.card-rec__title: a.inert(href="#") Женские легинсы карамельных цветов, размеры S-3XL, 6 цветов
+							.card-rec__price 456 руб. 
+						.slider__slide: .card-rec
+							a.block(href="#")
+								img.img-responsive.card-rec__pr(src="images/rec-4.jpg" width="255" height="255" alt="Рекомендация")
+							.card-rec__title: a.inert(href="#") Тактические нескользящие перчатки
+							.card-rec__price 250 руб.
+						
+				a.link.section-rec__link(href="#") Смотреть все покупки
+	
+		include pug/order
+
+		section.section-what.text-center
+			.container-fluid: .row: .col-xs-12
+				h2.h2.section-what__title Почему мы?
+				p.p.section-what__slogan Почему нас выбрали более 5000 клиентов
+			.container-fluid: .row
+				.col-xs-12.col-sm-4
+					.card-what
+						.card-what__icon: .card-what__cell
+							img(src="images/what/1.png", width="64" height="71" alt="Гарантия доставки")
+							//- svg.svg(width="116" height="120"): use(xlink:href="images/sprite.svg#what-1")
+						.card-what__divider
+						.card-what__title Гарантия доставки
+						.card-what__desc  Мы лично забираем все посылки и бережно доставляем в Россию. К тому же это значительно сокращает время Вашего ожидания.
+
+				.col-xs-12.col-sm-4
+					.card-what
+						.card-what__icon: .card-what__cell
+							img(src="images/what/2.png", width="75" height="75" alt="Всегда на связи")
+							//- svg.svg(width="120" height="120"): use(xlink:href="images/sprite.svg#what-2")
+						.card-what__divider
+						.card-what__title Всегда на связи
+						.card-what__desc Наши специалисты всегда онлайн для того чтобы ответить на любые интересующие вас вопросы о доставке из Китая.
+
+				.col-xs-12.col-sm-4
+					.card-what
+						.card-what__icon: .card-what__cell
+							img(src="images/what/3.png", width="57" height="74" alt="Удобный заказ")
+							//- svg.svg(width="120" height="100"): use(xlink:href="images/sprite.svg#what-3")
+						.card-what__divider
+						.card-what__title Удобный заказ
+						.card-what__desc Мы разработали и внедрили удобный функционал заказа в 3 шага, который позволяет быстро оформлять и контролировать ваш заказ.
+		
+		section.section-co-worker.text-center
+			.container-fluid: .row: .col-xs-12
+				h2.h2.section-co-worker__title Наша команда
+				p.p.section-co-worker__slogan
+					| Самые лучшие сотрудники только у нас
+			
+				.section-co-worker__cards
+					.section-co-worker__card: figure.card-co-worker
+						img.card-co-worker__pr(src="images/co-worker/1.jpg" width="225" height="225")
+						figcaption
+							.card-co-worker__title Анастасия
+							.card-co-worker__desc Чат, форум, состояние заказа, помощь в заказе
+
+				
+					.section-co-worker__card: figure.card-co-worker
+						img.card-co-worker__pr(src="images/co-worker/2.jpg" width="225" height="225")
+						figcaption
+							.card-co-worker__title Андрей
+							.card-co-worker__desc Управляющий
+
+				
+					.section-co-worker__card: figure.card-co-worker
+						img.card-co-worker__pr(src="images/co-worker/3.jpg" width="225" height="225")
+						figcaption
+							.card-co-worker__title Алексей
+							.card-co-worker__desc Управляющий
+
+				
+					.section-co-worker__card: figure.card-co-worker
+						img.card-co-worker__pr(src="images/co-worker/4.jpg" width="225" height="225")
+						figcaption
+							.card-co-worker__title Анна
+							.card-co-worker__desc Выкуп заказа, общение с продавцами
+								
+		section.section-helps
+			.container-fluid: .row: .col-xs-12
+				h2.h2.section-helps__title Помощь
+				.section-helps__cards
+					.section-helps__card: a.card-help(href="#")
+						img.card-help__pr(src="images/helps/1.jpg" width="350" height="240")
+						.card-help__inner: .card-help__cell
+							.card-help__icon: svg.svg(width="44" height="44"): use(xlink:href="images/sprite.svg#helps-1")
+							.card-help__title Как искать товары
+							
+					.section-helps__card: a.card-help(href="#")
+						img.card-help__pr(src="images/helps/2.jpg" width="350" height="240")
+						.card-help__inner: .card-help__cell
+							.card-help__icon: svg.svg(width="48" height="42"): use(xlink:href="images/sprite.svg#helps-2")
+							.card-help__title Как  оформить заказ
+
+					.section-helps__card: a.card-help(href="#")
+						img.card-help__pr(src="images/helps/3.jpg" width="350" height="240")
+						.card-help__inner: .card-help__cell
+							.card-help__icon: svg.svg(width="46" height="46"): use(xlink:href="images/sprite.svg#helps-3")
+							.card-help__title Оплата
+
+
+					.section-helps__card: a.card-help(href="#")
+						img.card-help__pr(src="images/helps/4.jpg" width="350" height="240")
+						.card-help__inner: .card-help__cell
+							.card-help__icon: svg.svg(width="58" height="45"): use(xlink:href="images/sprite.svg#helps-4")
+							.card-help__title Выбор цвета
+
+					.section-helps__card: a.card-help(href="#")
+						img.card-help__pr(src="images/helps/5.jpg" width="350" height="240")
+						.card-help__inner: .card-help__cell
+							.card-help__icon: svg.svg(width="47" height="47"): use(xlink:href="images/sprite.svg#helps-5")
+							.card-help__title Выбор размера
+
+					.section-helps__card: a.card-help(href="#")
+						img.card-help__pr(src="images/helps/6.jpg" width="350" height="240")
+						.card-help__inner: .card-help__cell
+							.card-help__icon: svg.svg(width="52" height="42"): use(xlink:href="images/sprite.svg#helps-6")
+							.card-help__title Доставка
+			
+		section.section-chat.text-center
+			.container: .row: .col-xs-12
+				h2.h2.section-chat__title Общайтесь со всеми в Чат-Онлайн
+				.section-chat__place
+					.grid-chat: .grid-chat__inner: each i in [1,2,3,4,5]
+						.grid-chat__row
+							.card-chat
+								.card-chat__column.card-chat__column_pr
+									img.card-chat__pr(src="images/chat.jpg" width="73" height="73" alt="Вера")
+								.card-chat__column.card-chat__column_text
+									.card-chat__stats.clearfix
+										.stats.card-chat__stat
+											.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#chat-time") 
+											time.stats__text(datetime="2004-07-24T18:18:18") сегодня в 4:36
+										.stats.card-chat__stat
+											.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#user") 
+											.stats__text Игорь
+										.card-chat__stat.text_color_cornflower: a.link(href="#") Чат
+									.card-chat__text Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))
+									
+																		
+		section.section-news.text-center
+			.container: .row: .col-xs-12
+				h2.h2.section-news__title.text_color_white Последние новости
+				.slider-wrap
+					.section-news__slider.slider.slider_news(): each i in [1,2]
+						.slider__slide
+							figure.card-news
+								a.block(href=""): img.card-news__pr(src="images/news/1.jpg" width="350" height="240" alt="Весення распродажа")
+								figcaption.card-news__caption: .card-news__title: a.link(href="#") Задержка с отправлением заказов в Забайкальск
+						.slider__slide
+							figure.card-news
+								a.block(href=""): img.card-news__pr(src="images/news/2.jpg" width="350" height="240")
+								figcaption.card-news__caption: .card-news__title: a.link(href="#") Обработка заказов временно приостановлена!
+						.slider__slide
+							figure.card-news
+								a.block(href=""): img.card-news__pr(src="images/news/3.jpg" width="350" height="240")
+								figcaption.card-news__caption: .card-news__title: a.link(href="#") Смена реквизитов для оплаты !
+		
+		include pug/foo
+		include pug/scripts	

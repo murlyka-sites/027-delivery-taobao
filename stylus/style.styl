@@ -1,0 +1,635 @@
+@import "inc/variables"
+@import "inc/fonts"
+@import "inc/page"
+@import "inc/block"
+@import "inc/typo"
+@import "inc/ui"
+@import "inc/nav"
+@import "inc/card"
+@import "inc/section"
+
+.message-with-card-orders {
+
+	&__count {
+		margin-bottom 15px
+		color #2a70a6
+	}
+
+	&__container {
+		display: table
+		width 100%
+	}
+
+	&__column {
+		display: table-cell;
+		vertical-align middle
+
+		&_pr {
+			padding-right 10px
+			width 55px
+		}
+	}
+
+	&__pr {
+		border-radius 50%
+	}
+
+	&__text {
+		position relative
+		height: 40px
+		overflow hidden;
+
+		&:after {
+			content ""
+			display block
+			position absolute
+			bottom 0
+			left 0
+			right 0
+			height 30px
+			background linear-gradient(to bottom, transparent, white)
+		}
+	}
+}
+
+.sub-card-orders-table {
+	width 100%
+
+	&__td {
+		vertical-align: top
+		padding 5px 0
+		border-bottom 1px solid  #d6d6d6
+	}
+}
+
+.select {
+	display:  inline-block
+	padding 0 10px
+	height 40px
+	box-shadow: inset 0 2px 4px rgba(21, 20, 21, 0.15);
+	border-radius: 4px;
+	border: 1px solid #d6d6d6;
+	font-size 16px
+}
+
+.sides {
+	width 100%
+
+	@media (min-width $md) {
+		display:  table
+	}
+
+	&__column {
+		margin-bottom 20px
+
+		@media (min-width $md) {
+			display: table-cell
+			vertical-align: middle
+			margin-bottom 0
+		}
+
+		&:last-child {
+			text-align left
+			margin-bottom 0
+
+			@media (min-width $md)  {
+				text-align right
+			}
+		}
+	}
+}
+
+.panel-orders {
+
+	@media (min-width $xs) {
+		display: table
+	}
+
+	&__column {
+		display: inline-block
+		padding 0 5px
+
+		&_select {
+			@media (max-width ($xs - 1px)) {
+				display block
+				width 100%
+				padding 0
+				margin-bottom 5px
+			}
+		}
+
+		@media (min-width $xs) {
+			display:  table-cell
+			vertical-align: middle
+		}
+
+		&:first-child {
+			padding-left: 0
+		}
+
+		&:last-child {
+			padding-right 0
+		}
+	}
+
+	&__select-wrap {
+		position relative
+		display inline-block
+		margin 0
+		border-radius 4px
+		overflow hidden
+		background white
+
+		@media (max-width ($xs - 1px)) {
+			display block
+			width 100%
+			padding 0
+		}
+
+		&:before {
+			content ""
+			display block
+			position absolute
+			z-index: 1
+			top 0
+			right 10px
+			bottom 0
+			height: 100%
+			width 15px
+			background url(../images/select-arrow.png) center right no-repeat content-box
+		}
+	}
+
+	&__select {
+		min-width: 180px
+		-ms-appearance:none
+		appearance none
+		background transparent
+		position relative
+		z-index: 1
+
+		&::-ms-expand {
+			display: none;
+		}
+
+		@media (max-width ($xs - 1px)) {
+			display block
+			width 100%
+		}
+
+		@media (min-width $sm) {
+			min-width: 220px
+		}
+	}
+
+	&__button {
+		display: inline-block;
+		background transparent
+		border none
+		padding 5px
+
+		&:hover {
+			opacity 0.75
+		}
+	}
+}
+
+.checkbox-list {
+
+	&__title {
+		font-size 30px
+		font-weight 700
+		margin-bottom 15px
+	}
+
+	&__slogan {
+		margin-bottom 35px
+		font-size: 16px
+	}
+
+	&__list {
+		@media (min-width $xs) {
+			columns 2
+		}
+	}
+
+	&__item {
+		display block
+
+		font-size 16px
+		font-weight 400
+	}
+
+	&__checkbox {
+		margin-right 5px
+	}
+}
+
+.checkboxed {
+	&__input {
+		display none
+	}
+
+	&__text {
+		cursor pointer
+		display inline-block
+		font-size 16px
+		padding: 10px 0
+		border 1px solid transparent
+		text-decoration: underline
+	}
+
+	&__input:checked + &__text {
+		padding 10px 15px
+		border-radius 2px
+		border 1px solid #77c363
+		background-color #e9fbe3
+		text-decoration: none
+	}
+}
+
+.form-with-personal {
+	width 100%
+
+	&__row {
+	}
+
+	&__column {
+		height 40px
+		padding-bottom 10px
+		vertical-align middle
+		font-size 16px
+		font-weight 700
+
+		&_label {
+			width 120px
+		}
+
+		&_field {}
+
+		&_required {
+			&:before {
+				content "* "
+				color #ff1c1c
+			}
+		}
+	}
+}
+
+.table-wrap {
+	max-width 100%
+	overflow auto
+}
+
+.table-order {
+	min-width 450px
+	width 100%
+
+	&__tr {
+		box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+
+		&:first-child {
+			box-shadow: none
+		}
+	}
+
+	&__th {
+		position relative
+		padding 10px
+		text-align: center
+		font-size: 18px
+
+		&:after {
+			content ""
+			display: block
+			position absolute
+			bottom 6px
+			left 0
+			right 0
+			border-bottom 1px solid #282828
+		}
+
+
+		&:first-child {
+			text-align: left
+		}
+	}
+
+	&__td {
+		padding 10px
+		border-bottom 1px solid #e8e8e8
+		background: white
+
+		&_total {
+			padding: 30px
+			text-align: right
+			font-size: 18px
+		}
+	}
+
+	&__th,
+	&__td {
+		@media (max-width ($sm - 1px)) {
+			padding-right 0
+		}
+
+		&:last-child {
+			@media (max-width ($sm - 1px)) {
+				padding-right 10px
+			}
+		}
+	}
+
+	&__sum {
+		font-size: 30px
+		font-weight: 700
+	}
+}
+
+.cp-order {
+	&__container {
+		display: table
+	}
+
+	&__column {
+		display: table-cell
+		vertical-align: middle
+		width 26px
+	}
+
+	&__button {
+		width 26px
+		height 26px
+		border none
+		background none
+		padding: 0
+		display: block
+		color $color-gray
+
+		&:hover {
+			opacity 0.75
+		}
+	}
+}
+
+.cp-basket {
+	&__container {
+		@media (min-width $sm) {
+			display: table
+		}
+	}
+
+	&__column {
+		@media (min-width $sm) {
+			display: table-cell
+			vertical-align: middle
+			width 26px
+		}
+
+	}
+	&__button {
+		width 26px
+		height 26px
+		border none
+		background none
+		padding: 0
+		display: block
+		color $color-gray
+
+		&:hover {
+			opacity 0.75
+		}
+	}
+}
+
+.header-sticky {
+	position sticky
+	top 0
+	left 0
+	width 100%
+	z-index 15
+
+	.sticky-wrapper {
+		display none
+
+		@media (min-width $md) {
+			display block
+		}
+	}
+}
+
+.page__body {
+}
+
+.grid-chat {
+	padding 5px
+
+	@media (min-width $sm) {
+		padding 0 30px
+	}
+
+	&__inner {
+		box-shadow 0 10px 15px rgba(0, 0, 0, 0.15)
+	}
+
+	&__row {
+		border-bottom 1px solid #d0d0d0
+
+		&:last-child {
+			margin-bottom 0
+		}
+	}
+}
+
+.grid-rec-page {
+	font-size 0
+	margin-left -15px
+	margin-right -15px
+
+	&__cell {
+		display inline-block
+		width 100%
+		vertical-align top
+		padding 15px
+
+		@media (min-width 500px) {
+			width 50%
+		}
+
+		@media (min-width $sm) {
+			width 33.33%
+		}
+
+		@media (min-width $md) {
+			width 25%
+		}
+	}
+}
+
+.grid-form-reviews {
+	width 100%
+
+	@media (max-width ($sm - 1px )) {
+		display block
+
+		tbody {
+			display block
+		}
+	}
+
+	&__row {
+		@media (max-width ($sm - 1px )) {
+			display block
+		}
+		// display table-row
+	}
+
+	&__cell {
+		padding 0
+
+
+		@media (max-width ($sm - 1px )) {
+			display block
+			margin-bottom 10px
+		}
+
+		&_left {
+			@media (min-width $sm) {
+				padding-right 20px
+				width 325px
+			}
+		}
+
+		&_top-left {
+			@media (min-width $sm) {
+				padding-bottom 10px
+			}
+		}
+	}
+}
+
+.field {
+	display block
+	border 1px solid #d4d4d4
+	width 100%
+	height 42px
+	padding 0 20px
+	border-radius 2px
+
+	color $color-gray-brown
+}
+
+.textarea {
+	padding 15px 20px
+	display block
+	width 100%
+	height 90px
+	resize none
+	border none
+	border-radius 4px
+	color $color-gray-brown
+}
+
+.form-reviews {
+	&__grid {
+		margin-bottom 20px
+	}
+
+	&__attach {
+		margin-bottom 20px
+	}
+
+	&__separator {
+		height 1px
+		margin 20px 0
+		background rgba(255, 255, 255, 0.1)
+	}
+
+	&__button {
+		width 280px
+		max-width 100%
+	}
+}
+
+.attach {
+	display table
+	line-height 20px
+	font-weight 400
+	color $color-cornflower
+
+
+	&__icon {
+		display table-cell
+		padding-bottom 5px
+		padding-right 5px
+		vertical-align middle
+	}
+
+	&__text {
+		display table-cell
+		vertical-align middle
+		font-size 16px
+		text-decoration underline
+	}
+
+	&:hover &__text {
+		text-decoration none
+	}
+}
+
+.grid-video {
+	@media (min-width $sm) {
+		margin-left -15px
+		margin-right -15px
+		font-size 0
+	}
+
+	&__cell {
+		margin-bottom 15px
+
+		@media (min-width $sm) {
+			display inline-block
+			width 50%
+			padding 20px
+			margin 0
+		}
+	}
+}
+
+.video-wrap {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+
+	iframe {
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+	}
+}
+
+.popup-top-nav {
+	width 100%
+	height 100%
+	padding 40px 15px !important
+	margin 0 !important
+	background-image linear-gradient(to top, #ffde00 0%, #ffde00 1%, #ffd800 100%) !important
+	color #282828 !important
+	text-align center !important
+
+
+	&__logo {
+		margin-bottom 45px
+	}
+
+	&__nav {
+		margin-bottom 15px
+	}
+
+	&__auth-and-registration {
+		margin-bottom 30px
+	}
+}
