@@ -5,7 +5,9 @@ $(document).ready(function(){
 		autoFocus: false		
 	})
 
-	// $(".header-sticky").sticky({topSpacing:0, zIndex: 10});
+	if($(".header-sticky").css("position") != "sticky") {
+		$(".header-sticky").sticky({topSpacing:0, zIndex: 20});
+	}
 
 	$(".slider_main").slick({
 		arrows: false,
