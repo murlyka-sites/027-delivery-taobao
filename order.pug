@@ -3,120 +3,121 @@ html(lang="ru")
 	head
 		include pug/head
 	body.page
-		include pug/header
-		section.section-order-conf
-			.container-fluid: .row: .col-xs-12
-				h2.h2.section-order-conf__title Подтверждения заказа
-				.section-order-conf__table.table-wrap
-					table.table-order
-						tr.table-order__tr
-							th.table-order__th Товар
-							th.table-order__th 
-							th.table-order__th Кол-во
-							th.table-order__th Сумма
-							th.table-order__th.hidden-xs Итого
-						each i in [1,2,3]
-							tr.table-order__tr.card-order-conf
-								td.table-order__td.card-order-conf__column.card-order-conf__column_pr: img.img-responsive.card-order-conf__pr(src="images/basket-pr.jpg" width="108" height="82")
-								td.table-order__td.card-order-conf__column.card-order-conf__column_title: a.card-order-conf__link(href="#") fengyioo South Korea A. by Bom super baby leaves cool soothing moisturizing mask bingning leaf 10 bag mail
-								td.table-order__td.card-order-conf__column.card-order-conf__column_count: .card-order-conf__count
-									b 69
-									|  товаров
-								td.table-order__td.card-order-conf__column.card-order-conf__column_price: .card-order-conf__price
-									.card-order-conf__yen
-										b ¥&nbsp;804,4
-									.card-order-conf__rubl ₽&nbsp;7463,43
-								td.hidden-xs.table-order__td.card-order-conf__column.card-order-conf__column_price: .card-order-conf__price
-									.card-order-conf__yen
-										b ¥&nbsp;804,4
-									.card-order-conf__rubl ₽&nbsp;7463,43
-						tr.table-order__tr
-							td.table-order__td.table-order__td_total(colspan="5")
-								| Итого с учетом комиссии: 
-								span.table-order__sum 1 171.80 ₽
-				.section-order-conf__form-grid
-					.section-order-conf__form-grid-column.section-order-conf__form-grid-column_field
-						table.form-with-personal: tbody
-							tr.form-with-personal__row
-								td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
-									| Регион
-								td.form-with-personal__column.form-with-personal__column_field
-									input.field.field_size_sm.field_theme_gray(type="text")
-							tr.form-with-personal__row
-								td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
-									| Город
-								td.form-with-personal__column.form-with-personal__column_field
-									input.field.field_size_sm.field_theme_gray(type="text")
-							tr.form-with-personal__row
-								td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
-									| Индекс
-								td.form-with-personal__column.form-with-personal__column_field
-									input.field.field_size_sm.field_theme_gray(type="text")
-							tr.form-with-personal__row
-								td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
-									| Адрес
-								td.form-with-personal__column.form-with-personal__column_field
-									input.field.field_size_sm.field_theme_gray(type="text")
-							tr.form-with-personal__row
-								td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
-									| Ф.И.О.
-								td.form-with-personal__column.form-with-personal__column_field
-									input.field.field_size_sm.field_theme_gray(type="text")
-							tr.form-with-personal__row
-								td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
-									| Телефон
-								td.form-with-personal__column.form-with-personal__column_field
-									input.field.field_size_sm.field_theme_gray(type="text")
-							tr.form-with-personal__row
-								td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
-									| Эл.почта
-								td.form-with-personal__column.form-with-personal__column_field
-									input.field.field_size_sm.field_theme_gray(type="text")
-							tr.form-with-personal__row
-								td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
-									| Доп.Данные
-								td.form-with-personal__column.form-with-personal__column_field
-									input.field.field_size_sm.field_theme_gray(type="text")
-					.section-order-conf__form-grid-column.section-order-conf__form-grid-column_checkbox
-						.checkbox-list
-							.checkbox-list__title Выберите способ доставки
-							.checkbox-list__slogan При выборе почты ЕМС или Почты России цена за таможенную очистку 250р\кг + предоплата на отправку по России (зависит от объема и веса)
-							.checkbox-list__list
-								label.checkbox-list__item.checkboxed
-									input.checkboxed__input(type="radio" name="delivery")
-									.checkboxed__text EMS
-								label.checkbox-list__item.checkboxed
-									input.checkboxed__input(type="radio" name="delivery")
-									.checkboxed__text Почта России 1 класс
-								label.checkbox-list__item.checkboxed
-									input.checkboxed__input(type="radio" name="delivery")
-									.checkboxed__text Почта России
-								label.checkbox-list__item.checkboxed
-									input.checkboxed__input(type="radio" name="delivery")
-									.checkboxed__text Энергия-авто
-								label.checkbox-list__item.checkboxed
-									input.checkboxed__input(type="radio" name="delivery")
-									.checkboxed__text Энергия-авиа
-								label.checkbox-list__item.checkboxed
-									input.checkboxed__input(type="radio" name="delivery")
-									.checkboxed__text Энергия-ж/д
-								label.checkbox-list__item.checkboxed
-									input.checkboxed__input(type="radio" name="delivery")
-									.checkboxed__text Деловые линии
-								label.checkbox-list__item.checkboxed
-									input.checkboxed__input(type="radio" name="delivery")
-									.checkboxed__text ТК Ратэк
-								label.checkbox-list__item.checkboxed
-									input.checkboxed__input(type="radio" name="delivery")
-									.checkboxed__text КИТ
-								label.checkbox-list__item.checkboxed
-									input.checkboxed__input(type="radio" name="delivery")
-									.checkboxed__text ЖелДорЭкспедиция
-								label.checkbox-list__item.checkboxed
-									input.checkboxed__input(type="radio" name="delivery")
-									.checkboxed__text Самовывоз
-				.section-order-conf__buttons
-					button.section-order-conf__button.button.button_theme_green.button_size_xs Сохранить заказ
-					button.section-order-conf__button.button.button_theme_yellow.button_size_xs Оформить заказ
+		.wrapper
+			include pug/header
+			section.section-order-conf
+				.container-fluid: .row: .col-xs-12
+					h2.h2.section-order-conf__title Подтверждения заказа
+					.section-order-conf__table.table-wrap
+						table.table-order
+							tr.table-order__tr
+								th.table-order__th Товар
+								th.table-order__th 
+								th.table-order__th Кол-во
+								th.table-order__th Сумма
+								th.table-order__th.hidden-xs Итого
+							each i in [1,2,3]
+								tr.table-order__tr.card-order-conf
+									td.table-order__td.card-order-conf__column.card-order-conf__column_pr: img.img-responsive.card-order-conf__pr(src="images/basket-pr.jpg" width="108" height="82")
+									td.table-order__td.card-order-conf__column.card-order-conf__column_title: a.card-order-conf__link(href="#") fengyioo South Korea A. by Bom super baby leaves cool soothing moisturizing mask bingning leaf 10 bag mail
+									td.table-order__td.card-order-conf__column.card-order-conf__column_count: .card-order-conf__count
+										b 69
+										|  товаров
+									td.table-order__td.card-order-conf__column.card-order-conf__column_price: .card-order-conf__price
+										.card-order-conf__yen
+											b ¥&nbsp;804,4
+										.card-order-conf__rubl ₽&nbsp;7463,43
+									td.hidden-xs.table-order__td.card-order-conf__column.card-order-conf__column_price: .card-order-conf__price
+										.card-order-conf__yen
+											b ¥&nbsp;804,4
+										.card-order-conf__rubl ₽&nbsp;7463,43
+							tr.table-order__tr
+								td.table-order__td.table-order__td_total(colspan="5")
+									| Итого с учетом комиссии: 
+									span.table-order__sum 1 171.80 ₽
+					.section-order-conf__form-grid
+						.section-order-conf__form-grid-column.section-order-conf__form-grid-column_field
+							table.form-with-personal: tbody
+								tr.form-with-personal__row
+									td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
+										| Регион
+									td.form-with-personal__column.form-with-personal__column_field
+										input.field.field_size_sm.field_theme_gray(type="text")
+								tr.form-with-personal__row
+									td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
+										| Город
+									td.form-with-personal__column.form-with-personal__column_field
+										input.field.field_size_sm.field_theme_gray(type="text")
+								tr.form-with-personal__row
+									td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
+										| Индекс
+									td.form-with-personal__column.form-with-personal__column_field
+										input.field.field_size_sm.field_theme_gray(type="text")
+								tr.form-with-personal__row
+									td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
+										| Адрес
+									td.form-with-personal__column.form-with-personal__column_field
+										input.field.field_size_sm.field_theme_gray(type="text")
+								tr.form-with-personal__row
+									td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
+										| Ф.И.О.
+									td.form-with-personal__column.form-with-personal__column_field
+										input.field.field_size_sm.field_theme_gray(type="text")
+								tr.form-with-personal__row
+									td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
+										| Телефон
+									td.form-with-personal__column.form-with-personal__column_field
+										input.field.field_size_sm.field_theme_gray(type="text")
+								tr.form-with-personal__row
+									td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
+										| Эл.почта
+									td.form-with-personal__column.form-with-personal__column_field
+										input.field.field_size_sm.field_theme_gray(type="text")
+								tr.form-with-personal__row
+									td.form-with-personal__column.form-with-personal__column_label.form-with-personal__column_required
+										| Доп.Данные
+									td.form-with-personal__column.form-with-personal__column_field
+										input.field.field_size_sm.field_theme_gray(type="text")
+						.section-order-conf__form-grid-column.section-order-conf__form-grid-column_checkbox
+							.checkbox-list
+								.checkbox-list__title Выберите способ доставки
+								.checkbox-list__slogan При выборе почты ЕМС или Почты России цена за таможенную очистку 250р\кг + предоплата на отправку по России (зависит от объема и веса)
+								.checkbox-list__list
+									label.checkbox-list__item.checkboxed
+										input.checkboxed__input(type="radio" name="delivery")
+										.checkboxed__text EMS
+									label.checkbox-list__item.checkboxed
+										input.checkboxed__input(type="radio" name="delivery")
+										.checkboxed__text Почта России 1 класс
+									label.checkbox-list__item.checkboxed
+										input.checkboxed__input(type="radio" name="delivery")
+										.checkboxed__text Почта России
+									label.checkbox-list__item.checkboxed
+										input.checkboxed__input(type="radio" name="delivery")
+										.checkboxed__text Энергия-авто
+									label.checkbox-list__item.checkboxed
+										input.checkboxed__input(type="radio" name="delivery")
+										.checkboxed__text Энергия-авиа
+									label.checkbox-list__item.checkboxed
+										input.checkboxed__input(type="radio" name="delivery")
+										.checkboxed__text Энергия-ж/д
+									label.checkbox-list__item.checkboxed
+										input.checkboxed__input(type="radio" name="delivery")
+										.checkboxed__text Деловые линии
+									label.checkbox-list__item.checkboxed
+										input.checkboxed__input(type="radio" name="delivery")
+										.checkboxed__text ТК Ратэк
+									label.checkbox-list__item.checkboxed
+										input.checkboxed__input(type="radio" name="delivery")
+										.checkboxed__text КИТ
+									label.checkbox-list__item.checkboxed
+										input.checkboxed__input(type="radio" name="delivery")
+										.checkboxed__text ЖелДорЭкспедиция
+									label.checkbox-list__item.checkboxed
+										input.checkboxed__input(type="radio" name="delivery")
+										.checkboxed__text Самовывоз
+					.section-order-conf__buttons
+						button.section-order-conf__button.button.button_theme_green.button_size_xs Сохранить заказ
+						button.section-order-conf__button.button.button_theme_yellow.button_size_xs Оформить заказ
 		include pug/foo
 		include pug/scripts

@@ -3,89 +3,90 @@ html(lang="ru")
 	head
 		include pug/head
 	body.page
-		include pug/header
-		.section-basket: .container-fluid: .row: .col-xs-12
-			h2.h2.section-basket__title Корзина
-			.section-basket__cards: each item in [1,2,3]
-				.section-basket__card: .card-basket
-					.card-basket__container
-						.card-basket__column.card-basket__column_pr
-							img.card-basket__pr.img-responsive(src="images/basket-pr.jpg" width="123" height="94" alt="basket pr")
-						.card-basket__column.card-basket__column_title
-							a.link.card-basket__link(href="#") Шапка розовая
-						.card-basket__column.card-basket__column_price
-							.card-basket__price
-								b.card-basket__yen ¥&nbsp;804,4
-								.card-basket__rubl ₽&nbsp;7463,43
-						.card-basket__column.card-basket__column_count
-							.card-basket__count 
-							b 69
-							|  товаров
-						.card-basket__column.card-basket__column_status.hidden-xs
-							.card-basket__status
-								span.text_color_gray Статус:
-								| 
-								span.text_color_green Выкуплен
-								br
-								| Оплачено 5680&nbsp;₽
-								
-						.card-basket__column.card-basket__column_control: .card-basket__control.cp: .cp-basket__container
-							.cp-basket__column: button.cp-basket__button: svg.svg(width="13" height="13"): use(xlink:href="images/sprite.svg#remove")
-							.cp-basket__column: button.cp-basket__button: svg.svg(width="16" height="16"): use(xlink:href="images/sprite.svg#edit")
-							.cp-basket__column: button.cp-basket__button: svg.svg(width="16" height="16"): use(xlink:href="images/sprite.svg#share")
-				
-			.section-basket__buttons
-				a.section-basket__button.button.button_theme_green.button_size_xs(href="#") Сохранить заказ
-				a.section-basket__button.button.button_theme_yellow.button_size_xs(href="#") Оформить заказ
-		section.section-chat.section-chat_with_basket.text-center
-			.container: .row: .col-xs-12
-				h2.h2.section-chat__title Общайтесь со всеми в Чат-Онлайн
-				.section-chat__place
-					.grid-chat: .grid-chat__inner: each i in [1,2,3,4,5]
-						.grid-chat__row
-							.card-chat
-								.card-chat__column.card-chat__column_pr
-									img.card-chat__pr(src="images/chat.jpg" width="73" height="73" alt="Вера")
-								.card-chat__column.card-chat__column_text
-									.card-chat__stats.clearfix
-										.stats.card-chat__stat
-											.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#chat-time") 
-											time.stats__text(datetime="2004-07-24T18:18:18") сегодня в 4:36
-										.stats.card-chat__stat
-											.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#user") 
-											.stats__text Игорь
-										.card-chat__stat.text_color_cornflower: a.link(href="#") Чат
-									.card-chat__text Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))
+		.wrapper
+			include pug/header
+			.section-basket: .container-fluid: .row: .col-xs-12
+				h2.h2.section-basket__title Корзина
+				.section-basket__cards: each item in [1,2,3]
+					.section-basket__card: .card-basket
+						.card-basket__container
+							.card-basket__column.card-basket__column_pr
+								img.card-basket__pr.img-responsive(src="images/basket-pr.jpg" width="123" height="94" alt="basket pr")
+							.card-basket__column.card-basket__column_title
+								a.link.card-basket__link(href="#") Шапка розовая
+							.card-basket__column.card-basket__column_price
+								.card-basket__price
+									b.card-basket__yen ¥&nbsp;804,4
+									.card-basket__rubl ₽&nbsp;7463,43
+							.card-basket__column.card-basket__column_count
+								.card-basket__count 
+								b 69
+								|  товаров
+							.card-basket__column.card-basket__column_status.hidden-xs
+								.card-basket__status
+									span.text_color_gray Статус:
+									| 
+									span.text_color_green Выкуплен
+									br
+									| Оплачено 5680&nbsp;₽
 									
-						.grid-chat__row
-							.card-chat
-								.card-chat__column.card-chat__column_pr
-									img.card-chat__pr(src="images/chat.jpg" width="73" height="73" alt="Вера")
-								.card-chat__column.card-chat__column_text
-									.card-chat__stats.clearfix
-										.stats.card-chat__stat
-											.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#chat-time") 
-											time.stats__text(datetime="2004-07-24T18:18:18") сегодня в 4:36
-										.stats.card-chat__stat
-											.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#user") 
-											.stats__text Игорь
-										.card-chat__stat.text_color_cornflower: a.link(href="#") Чат
-									.card-chat__text Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))
+							.card-basket__column.card-basket__column_control: .card-basket__control.cp: .cp-basket__container
+								.cp-basket__column: button.cp-basket__button: svg.svg(width="13" height="13"): use(xlink:href="images/sprite.svg#remove")
+								.cp-basket__column: button.cp-basket__button: svg.svg(width="16" height="16"): use(xlink:href="images/sprite.svg#edit")
+								.cp-basket__column: button.cp-basket__button: svg.svg(width="16" height="16"): use(xlink:href="images/sprite.svg#share")
+					
+				.section-basket__buttons
+					a.section-basket__button.button.button_theme_green.button_size_xs(href="#") Сохранить заказ
+					a.section-basket__button.button.button_theme_yellow.button_size_xs(href="#") Оформить заказ
+			section.section-chat.section-chat_with_basket.text-center
+				.container: .row: .col-xs-12
+					h2.h2.section-chat__title Общайтесь со всеми в Чат-Онлайн
+					.section-chat__place
+						.grid-chat: .grid-chat__inner: each i in [1,2,3,4,5]
+							.grid-chat__row
+								.card-chat
+									.card-chat__column.card-chat__column_pr
+										img.card-chat__pr(src="images/chat.jpg" width="73" height="73" alt="Вера")
+									.card-chat__column.card-chat__column_text
+										.card-chat__stats.clearfix
+											.stats.card-chat__stat
+												.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#chat-time") 
+												time.stats__text(datetime="2004-07-24T18:18:18") сегодня в 4:36
+											.stats.card-chat__stat
+												.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#user") 
+												.stats__text Игорь
+											.card-chat__stat.text_color_cornflower: a.link(href="#") Чат
+										.card-chat__text Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))
 										
-						.grid-chat__row
-							.card-chat.card-chat_unread
-								.card-chat__column.card-chat__column_reply: svg.svg(width="35" height="31"): use(xlink:href="images/sprite.svg#reply")
-								.card-chat__column.card-chat__column_pr
-									img.card-chat__pr(src="images/chat.jpg" width="73" height="73" alt="Вера")
-								.card-chat__column.card-chat__column_text
-									.card-chat__stats.clearfix
-										.stats.card-chat__stat
-											.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#chat-time") 
-											time.stats__text(datetime="2004-07-24T18:18:18") сегодня в 4:36
-										.stats.card-chat__stat
-											.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#user") 
-											.stats__text Игорь
-										.card-chat__stat.text_color_cornflower: a.link(href="#") Чат
-									.card-chat__text Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))
+							.grid-chat__row
+								.card-chat
+									.card-chat__column.card-chat__column_pr
+										img.card-chat__pr(src="images/chat.jpg" width="73" height="73" alt="Вера")
+									.card-chat__column.card-chat__column_text
+										.card-chat__stats.clearfix
+											.stats.card-chat__stat
+												.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#chat-time") 
+												time.stats__text(datetime="2004-07-24T18:18:18") сегодня в 4:36
+											.stats.card-chat__stat
+												.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#user") 
+												.stats__text Игорь
+											.card-chat__stat.text_color_cornflower: a.link(href="#") Чат
+										.card-chat__text Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))
+											
+							.grid-chat__row
+								.card-chat.card-chat_unread
+									.card-chat__column.card-chat__column_reply: svg.svg(width="35" height="31"): use(xlink:href="images/sprite.svg#reply")
+									.card-chat__column.card-chat__column_pr
+										img.card-chat__pr(src="images/chat.jpg" width="73" height="73" alt="Вера")
+									.card-chat__column.card-chat__column_text
+										.card-chat__stats.clearfix
+											.stats.card-chat__stat
+												.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#chat-time") 
+												time.stats__text(datetime="2004-07-24T18:18:18") сегодня в 4:36
+											.stats.card-chat__stat
+												.stats__icon: svg(width="16" height="16"): use(xlink:href="images/sprite.svg#user") 
+												.stats__text Игорь
+											.card-chat__stat.text_color_cornflower: a.link(href="#") Чат
+										.card-chat__text Марина, Да, конечно. почта тоже возможно. )) И если вы уже выбирали ссылку товара. вы можете добавить её на наше сайте. В заказе вы тоже момете сообщать нам. ))
 		include pug/foo
 		include pug/scripts
