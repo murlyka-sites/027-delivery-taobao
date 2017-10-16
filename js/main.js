@@ -1,6 +1,10 @@
 $(document).ready(function(){
 	svg4everybody();
 
+	$("[data-fancybox]").fancybox({
+		autoFocus: false		
+	})
+
 	// $(".header-sticky").sticky({topSpacing:0, zIndex: 10});
 
 	$(".slider_main").slick({
